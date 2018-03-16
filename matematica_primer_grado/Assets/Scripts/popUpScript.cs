@@ -6,16 +6,21 @@ using DG.Tweening;
 
 public class popUpScript : MonoBehaviour {
 
+    //script que maneja el comportamiento de los popUps
+    //se debe ingresar el texto que indique la escena siguiente
+    //las escenas que repiten los ejercicios pero con disintos numeros deben llamarse igual agregando un 30,60 o 100 al final
+
     public string escenaSiguiente;
-    public int nroModulo;
     [HideInInspector] public bool bandera1, bandera2, check;
     [HideInInspector] public GameObject popUp, popUpMal;
+    private Scene activeScene;
 
 	// Use this for initialization
 	void Start () {
         bandera1 = true;
         bandera2 = true;
         check = false;
+        activeScene = SceneManager.GetActiveScene();
         popUp = GameObject.FindGameObjectWithTag("popUp"); //referencia a los popUps
         popUpMal = GameObject.FindGameObjectWithTag("popUpMal");
         if (popUp != null)//desactiva los popUps al comenzar la escena
@@ -33,23 +38,38 @@ public class popUpScript : MonoBehaviour {
 		
 	}
 
-
+    //reinicia la escena
     public void cerrarPopUP()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    //lleva a la siguiente escena
     public void siguienteEscena()
     {
         SceneManager.LoadScene(escenaSiguiente);
     }
 
-    public void botonMenu()
+    //lleva a la misma escena con numeros hasta 30
+    public void ejercicios30()
     {
-        SceneManager.LoadScene("Menu Modulo "+nroModulo);
+        SceneManager.LoadScene(activeScene.name + "30");
     }
 
+    //lleva a la misma escena con numeros hasta 60
+    public void ejercicios60()
+    {
+        SceneManager.LoadScene(activeScene.name + "60");
+    }
 
+    //lleva a la misma escena con numeros hasta 100
+    public void ejercicios100()
+    {
+        SceneManager.LoadScene(activeScene.name + "100");
+    }
+
+    
+    //metodo que llama al popUp que indica que se ha realizado bien el ejercicio
     public void Bien()
     {
         if (bandera1 && bandera2)
@@ -64,6 +84,7 @@ public class popUpScript : MonoBehaviour {
         }
     }
 
+    //metodo que llama al popUp que indica que se fallo el ejercicio
     public void Mal()
     {
         if (bandera1 && bandera2)
