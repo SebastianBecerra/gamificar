@@ -99,6 +99,11 @@ public class popUpScript : MonoBehaviour {
         SceneManager.LoadScene(activeScene.name + "100");
     }
 
+    public void cerrarStage()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
     
     //metodo que llama al popUp que indica que se ha realizado bien el ejercicio
     public void Bien()
