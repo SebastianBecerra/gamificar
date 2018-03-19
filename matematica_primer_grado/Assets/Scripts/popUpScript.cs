@@ -30,14 +30,34 @@ public class popUpScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         scene = SceneManager.GetActiveScene();//obtiene el nombre de la escena
-        if (scene.name == "")//si es la scena incial reinicia 
+        if (scene.name == "Inicio")//si es la scena incial reinicia 
         {
-            stageManager.instance.value10 = 0;
+            stageManager.instance.reinicio = true;
         }
-        bandera1 = true;
+        if (stageManager.instance.reinicio == true)//si comienza el juego 
+        {
+            //desactiva todos los sprites de check
+            foreach (GameObject a in stages10)
+            {
+                a.SetActive(false);
+            }
+            foreach(GameObject b in stages30)
+            {
+                b.SetActive(false);
+            }
+            foreach(GameObject c in stages60)
+            {
+                c.SetActive(false);
+            }
+            foreach(GameObject d in stages100)
+            {
+                d.SetActive(false);
+            }
+        }
+        bandera1 = true;//auxiliares para movimiento de popUp;
         bandera2 = true;
         check = false;
-        activeScene = SceneManager.GetActiveScene();
+        activeScene = SceneManager.GetActiveScene();//obtengo el nombre de la escena para controlar el nombre
         popUp = GameObject.FindGameObjectWithTag("popUp"); //referencia a los popUps
         popUpMal = GameObject.FindGameObjectWithTag("popUpMal");
         if (popUp != null)//desactiva los popUps al comenzar la escena
@@ -99,6 +119,7 @@ public class popUpScript : MonoBehaviour {
         SceneManager.LoadScene(activeScene.name + "100");
     }
 
+    //lleva al menu principal
     public void cerrarStage()
     {
         SceneManager.LoadScene("Menu");
@@ -113,12 +134,20 @@ public class popUpScript : MonoBehaviour {
         switch (nroDif)
         {
             case 10:
+                stageManager.instance.value10[nroEtapa]=1;
+                llenarArray10();
                 break;
             case 30:
+                stageManager.instance.value30[nroEtapa] = 1;
+                llenarArray30();
                 break;
             case 60:
+                stageManager.instance.value60[nroEtapa] = 1;
+                llenarArray60();
                 break;
             case 100:
+                stageManager.instance.value100[nroEtapa] = 1;
+                llenarArray100();
                 break;
         }
 
@@ -145,7 +174,58 @@ public class popUpScript : MonoBehaviour {
                 popUpMal.GetComponent<Transform>().DOMove(new Vector3(popUpMal.transform.position.x, popUpMal.transform.position.y + 0.7f, popUpMal.transform.position.z), 0.3f);
                 check = true;
             }
+        }
+    }
 
+    //metodo que recorre el array value10 y cuando el valor es 1, usa el indice para
+    //setear activo el gameObject
+    public void llenarArray10()
+    {
+        for(int i=0; i<=stageManager.instance.value10.Length; i++)
+        {
+            if (stageManager.instance.value10[i]==1)
+            {
+                stages10[i].SetActive(true);
+            }
+        }
+    }
+
+    //metodo que recorre el array value30 y cuando el valor es 1, usa el indice para
+    //setear activo el gameObject
+    public void llenarArray30()
+    {
+        for (int i = 0; i <= stageManager.instance.value30.Length; i++)
+        {
+            if (stageManager.instance.value10[i] == 1)
+            {
+                stages10[i].SetActive(true);
+            }
+        }
+    }
+
+    //metodo que recorre el array value60 y cuando el valor es 1, usa el indice para
+    //setear activo el gameObject
+    public void llenarArray60()
+    {
+        for (int i = 0; i <= stageManager.instance.value60.Length; i++)
+        {
+            if (stageManager.instance.value10[i] == 1)
+            {
+                stages10[i].SetActive(true);
+            }
+        }
+    }
+
+    //metodo que recorre el array value100 y cuando el valor es 1, usa el indice para
+    //setear activo el gameObject
+    public void llenarArray100()
+    {
+        for (int i = 0; i <= stageManager.instance.value100.Length; i++)
+        {
+            if (stageManager.instance.value10[i] == 1)
+            {
+                stages10[i].SetActive(true);
+            }
         }
     }
 }

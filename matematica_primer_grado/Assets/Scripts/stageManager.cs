@@ -9,8 +9,8 @@ public class stageManager : MonoBehaviour
 
     public static stageManager instance { get; private set; }
 
-    [HideInInspector] public int value10, value30, value60, value100; //valor para cada dificultad
-
+    [HideInInspector] public int[] value10, value30, value60, value100; //valor para cada dificultad
+    [HideInInspector] public bool reinicio;
     private void Awake()
     {
         if (instance == null) //sino hay un obj stageManager lo creo y si hay lo destruye para que solo se encuentre una instancia en la scene
@@ -22,6 +22,7 @@ public class stageManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
 
 }
