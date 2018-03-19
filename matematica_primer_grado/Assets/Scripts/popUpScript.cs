@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using UnityEngine.UI;
+using System.Text.RegularExpressions;
 
 public class popUpScript : MonoBehaviour {
 
@@ -18,7 +19,7 @@ public class popUpScript : MonoBehaviour {
     public int nroDif;//indica la dificultad-10,30,60 o 100
     [HideInInspector] public bool bandera1, bandera2, check;
     [HideInInspector] public GameObject popUp, popUpMal;
-    private Scene activeScene;
+    public string activeScene;
 
     //referencias a los sprites de completar stage
     public GameObject[] stages10;
@@ -59,7 +60,7 @@ public class popUpScript : MonoBehaviour {
         bandera1 = true;//auxiliares para movimiento de popUp;
         bandera2 = true;
         check = false;
-        activeScene = SceneManager.GetActiveScene();//obtengo el nombre de la escena para controlar el nombre
+        activeScene = SceneManager.GetActiveScene().name.ToString();//obtengo el nombre de la escena para controlar el nombre
         popUp = GameObject.FindGameObjectWithTag("popUp"); //referencia a los popUps
         popUpMal = GameObject.FindGameObjectWithTag("popUpMal");
         if (popUp != null)//desactiva los popUps al comenzar la escena
@@ -100,25 +101,29 @@ public class popUpScript : MonoBehaviour {
     //lleva a la misma scena con numeros hasta 10
     public void ejercicios10()
     {
-        SceneManager.LoadScene(activeScene.name + "10");
+        activeScene = Regex.Replace(activeScene, "[^a-zA-Z]", "");
+        SceneManager.LoadScene(activeScene + "10");
     }
 
     //lleva a la misma escena con numeros hasta 30
     public void ejercicios30()
     {
-        SceneManager.LoadScene(activeScene.name + "30");
+        activeScene = Regex.Replace(activeScene, "[^a-zA-Z]", "");
+        SceneManager.LoadScene(activeScene + "30");
     }
 
     //lleva a la misma escena con numeros hasta 60
     public void ejercicios60()
     {
-        SceneManager.LoadScene(activeScene.name + "60");
+        activeScene = Regex.Replace(activeScene, "[^a-zA-Z]", "");
+        SceneManager.LoadScene(activeScene+ "60");
     }
 
     //lleva a la misma escena con numeros hasta 100
     public void ejercicios100()
     {
-        SceneManager.LoadScene(activeScene.name + "100");
+        activeScene = Regex.Replace(activeScene, "[^a-zA-Z]", "");
+        SceneManager.LoadScene(activeScene+ "100");
     }
 
     //lleva al menu principal
@@ -229,4 +234,5 @@ public class popUpScript : MonoBehaviour {
             }
         }
     }
+    
 }
