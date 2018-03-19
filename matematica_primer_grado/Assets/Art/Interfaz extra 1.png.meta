@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 875204d689afb0a4693ea614fd920bab
-timeCreated: 1521470395
+guid: 16e412b79f587824a8c8e660ed5c9fd1
+timeCreated: 1521472607
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: BotonEmpezar
-    21300002: Btn CerrarPopUp
-    21300004: Btn Siguiente PopUp
+    21300000: Btn Empezar
+    21300002: Btn Cerrar
+    21300004: Btn Siguiente
     21300006: SideBar bar
     21300008: SideBar
     21300010: Logo
@@ -84,7 +84,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BotonEmpezar
+      name: Btn Empezar
       rect:
         serializedVersion: 2
         x: 15
@@ -98,7 +98,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Btn CerrarPopUp
+      name: Btn Cerrar
       rect:
         serializedVersion: 2
         x: 36
@@ -112,7 +112,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Btn Siguiente PopUp
+      name: Btn Siguiente
       rect:
         serializedVersion: 2
         x: 188
@@ -130,12 +130,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 506
-        y: 484
-        width: 128
-        height: 192
+        y: 622
+        width: 37
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 19, y: 21, z: 18, w: 18}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -143,13 +143,13 @@ TextureImporter:
       name: SideBar
       rect:
         serializedVersion: 2
-        x: 698
-        y: 484
-        width: 128
-        height: 192
+        x: 559
+        y: 622
+        width: 37
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 19, y: 19, z: 18, w: 18}
       outline: []
       physicsShape: []
       tessellationDetail: 0
