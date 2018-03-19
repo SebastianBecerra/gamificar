@@ -10,13 +10,30 @@ public class popUpScript : MonoBehaviour {
     //se debe ingresar el texto que indique la escena siguiente
     //las escenas que repiten los ejercicios pero con disintos numeros deben llamarse igual agregando un 30,60 o 100 al final
 
+   
+    public string escenaAnterior;
     public string escenaSiguiente;
+    public int nroEtapa;
+    public int nroDif;//indica la dificultad-10,30,60 o 100
     [HideInInspector] public bool bandera1, bandera2, check;
     [HideInInspector] public GameObject popUp, popUpMal;
     private Scene activeScene;
 
+    //referencias a los sprites de completar stage
+    public GameObject[] stages10;
+    public GameObject[] stages30;
+    public GameObject[] stages60;
+    public GameObject[] stages100;
+
+    private Scene scene;//referencia a la primera scene pára reiniciar los vaalores de singleton
+
 	// Use this for initialization
 	void Start () {
+        scene = SceneManager.GetActiveScene();//obtiene el nombre de la escena
+        if (scene.name == "")//si es la scena incial reinicia 
+        {
+            stageManager.instance.value10 = 0;
+        }
         bandera1 = true;
         bandera2 = true;
         check = false;
@@ -31,6 +48,8 @@ public class popUpScript : MonoBehaviour {
         {
             popUpMal.SetActive(false);
         }
+
+
     }
 	
 	// Update is called once per frame
@@ -48,6 +67,18 @@ public class popUpScript : MonoBehaviour {
     public void siguienteEscena()
     {
         SceneManager.LoadScene(escenaSiguiente);
+    }
+
+    //lleva a la escena anterior
+    public void anteriorEscena()
+    {
+        SceneManager.LoadScene(escenaAnterior);
+    }
+
+    //lleva a la misma scena con numeros hasta 10
+    public void ejercicios10()
+    {
+        SceneManager.LoadScene(activeScene.name + "10");
     }
 
     //lleva a la misma escena con numeros hasta 30
@@ -72,6 +103,20 @@ public class popUpScript : MonoBehaviour {
     //metodo que llama al popUp que indica que se ha realizado bien el ejercicio
     public void Bien()
     {
+
+        //diferencia de dificultad para activar los srites de completar etapa
+        switch (nroDif)
+        {
+            case 10:
+                break;
+            case 30:
+                break;
+            case 60:
+                break;
+            case 100:
+                break;
+        }
+
         if (bandera1 && bandera2)
         {
             popUp.SetActive(true);
