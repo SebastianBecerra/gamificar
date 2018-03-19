@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class popUpScript : MonoBehaviour {
 
@@ -26,6 +27,7 @@ public class popUpScript : MonoBehaviour {
     public GameObject[] stages100;
 
     private Scene scene;//referencia a la primera scene pára reiniciar los vaalores de singleton
+    
 
 	// Use this for initialization
 	void Start () {
@@ -124,7 +126,6 @@ public class popUpScript : MonoBehaviour {
     {
         SceneManager.LoadScene("Menu");
     }
-
     
     //metodo que llama al popUp que indica que se ha realizado bien el ejercicio
     public void Bien()
