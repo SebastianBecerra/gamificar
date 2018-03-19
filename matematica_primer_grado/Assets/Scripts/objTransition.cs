@@ -10,7 +10,7 @@ public class objTransition : MonoBehaviour {
     //para que este script funcione con botones debe agregarse el boton en el child del objeto que contenga este script
     //para que la funcionalidad de volver con el boton funcione bien, el primer elemento de la lista debe ser la posicion inicial
 
-    public int duracion; //cuanto tarda en realizar la transicion
+	public float duracion; //cuanto tarda en realizar la transicion
     public List<GameObject> lugares = new List<GameObject>(); //lista con las posiciones a moverse
     private List<Vector3> positions = new List<Vector3>(); //vector3 que se van a usar en el metodo DoPath
     public bool activarConBoton = false; //indica si el movimiento se realizara despues de dar click a un boton
