@@ -9,8 +9,10 @@ public class stageManager : MonoBehaviour
 
     public static stageManager instance { get; private set; }
 
-    [HideInInspector] public int[] value10, value30, value60, value100; //valor para cada dificultad
-    [HideInInspector] public bool reinicio;
+    public int[] value10, value30, value60, value100; //valor para cada dificultad
+    [HideInInspector] public bool reinicio; //bandera para reiniciar los sprites
+    public int longitud; //longitud de los array 
+
     private void Awake()
     {
         if (instance == null) //sino hay un obj stageManager lo creo y si hay lo destruye para que solo se encuentre una instancia en la scene
@@ -22,11 +24,11 @@ public class stageManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        value10 = new int[4];
-        value30 = new int[4];
-        value60 = new int[4];
-        value100 = new int[4];
+        //inicializacion de arrays
+        value10 = new int[longitud];
+        value30 = new int[longitud];
+        value60 = new int[longitud];
+        value100 = new int[longitud];
     }
 
     

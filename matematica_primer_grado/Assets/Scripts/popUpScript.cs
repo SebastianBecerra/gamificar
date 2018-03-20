@@ -13,20 +13,20 @@ public class popUpScript : MonoBehaviour {
     //las escenas que repiten los ejercicios pero con disintos numeros deben llamarse igual agregando un 30,60 o 100 al final
 
    
-    public string escenaAnterior;
-    public string escenaSiguiente;
-    public int nroEtapa;
+    public string escenaAnterior;//string que debe llenarse para llevar a escena anterior
+    public string escenaSiguiente;//string que debe llenarse para llevar a escena siguiente
+    public int nroEtapa;//indica el nivel para luego ser usado como indice en el checkeo de stages completos
     public int nroDif;//indica la dificultad-10,30,60 o 100
     [HideInInspector] public bool bandera1, bandera2, check;
-    [HideInInspector] public GameObject popUp, popUpMal;
-    public string activeScene;
+    [HideInInspector] public GameObject popUp, popUpMal,acierto,error;
+    [HideInInspector]public string activeScene;
 
     //referencias a los sprites de completar stage
     public GameObject[] stages10;
     public GameObject[] stages30;
     public GameObject[] stages60;
     public GameObject[] stages100;
-
+    private Vector3 posIniAcierto,posIniError;//posicion iniciales de los carteles acierto y error
     private Scene scene;//referencia a la primera scene pára reiniciar los vaalores de singleton
     
 
@@ -77,6 +77,10 @@ public class popUpScript : MonoBehaviour {
         activeScene = SceneManager.GetActiveScene().name.ToString();//obtengo el nombre de la escena para controlar el nombre
         popUp = GameObject.FindGameObjectWithTag("popUp"); //referencia a los popUps
         popUpMal = GameObject.FindGameObjectWithTag("popUpMal");
+        acierto = GameObject.FindGameObjectWithTag("popUpAcierto");
+        error = GameObject.FindGameObjectWithTag("popUpError");
+        posIniAcierto = acierto.transform.position;//asigno las posiciones de acierto y error en sus pos iniciales
+        posIniError = error.transform.position;
         if (popUp != null)//desactiva los popUps al comenzar la escena
         {
             popUp.SetActive(false);
@@ -84,6 +88,14 @@ public class popUpScript : MonoBehaviour {
         if (popUpMal != null)
         {
             popUpMal.SetActive(false);
+        }
+        if (acierto)
+        {
+            acierto.SetActive(false);
+        }
+        if (error)
+        {
+            error.SetActive(false);
         }
 
         //llena los checks completados
@@ -201,6 +213,31 @@ public class popUpScript : MonoBehaviour {
                 check = true;
             }
         }
+    }
+
+    //metodo que invoca al cartel acierto
+    public void cartelAcierto()
+    {
+        acierto.SetActive(true);//activa el cartel
+        acierto.transform.position = posIniAcierto;//lo lleva a su posicion incial
+        acierto.GetComponent<Transform>().DOMove(new Vector3 (acierto.transform.position.x, acierto.transform.position.y + 0.7f, acierto.transform.position.z),0.3f);//realiza movimiento hacia arriba
+        Invoke("despawnPopUp",0.5f);//invoca metodo que desactiva el cartel despues del tiempo determinado
+    }
+
+    //metodo que invoca al cartel error
+    public void cartelError()
+    {
+        error.SetActive(true);
+        error.transform.position = posIniError;//lo vuelve a su posicion inicial
+        error.GetComponent<Transform>().DOMove(new Vector3(error.transform.position.x, error.transform.position.y + 0.7f, error.transform.position.z), 0.3f);//realiza movimiento hacia arriba
+        Invoke("despawnPopUp", 0.5f);//invoca metodo que desactiva el cartel despues del tiempo determinado
+    }
+
+    //desactiva los carteles acierto y error
+    void despawnPopUp()
+    {
+        acierto.SetActive(false);
+        error.SetActive(false);
     }
 
     //metodo que recorre el array value10 y cuando el valor es 1, usa el indice para
