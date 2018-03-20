@@ -29,7 +29,8 @@ public class GameController : MonoBehaviour {
             if (estado) {
 				if (continua) {
 					invocarPopUpCorrecto ();
-					SceneManager.LoadScene (siguienteEscena);
+					Invoke ("llamarEscenaSiguiente",0.4f);
+
 				} else {
 					invocarPopUp();
 				}
@@ -50,5 +51,8 @@ public class GameController : MonoBehaviour {
 	}
 	public void invocarPopUpError(){
 		popUp.cartelError ();
+	}
+	void llamarEscenaSiguiente(){
+		SceneManager.LoadScene (siguienteEscena);
 	}
 }
