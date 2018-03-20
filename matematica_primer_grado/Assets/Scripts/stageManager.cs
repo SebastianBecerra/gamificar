@@ -23,6 +23,11 @@ public class stageManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+        value10 = new int[4];
+        value30 = new int[4];
+        value60 = new int[4];
+        value100 = new int[4];
     }
 
+    
 }

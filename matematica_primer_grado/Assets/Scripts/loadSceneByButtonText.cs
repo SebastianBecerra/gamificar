@@ -22,7 +22,7 @@ public class loadSceneByButtonText : MonoBehaviour {
     //abre escena con el nombre del boton
     public void abrirEscena()
     {
-        SceneManager.LoadScene(textbtn.text);
+        SceneManager.LoadScene(textbtn.text+"10");
     }
 
 
