@@ -7,6 +7,8 @@ public class ControllerInputText : EsCheckeable {
 
     [HideInInspector] public InputTextScript[] inputsText;
     [HideInInspector] public GameController controller;
+	[Tooltip("Deja que el sistema se chequee de forma automatica y termine cuando todos los inputFields estan Correctos")]
+	public bool automatico;
 	void Start () {
         inputsText = FindObjectsOfType<InputTextScript>();
         controller = GetComponent<GameController>();
@@ -14,7 +16,7 @@ public class ControllerInputText : EsCheckeable {
     }
 
     public void chequearEstado() {
-        if (EsCorrecto()) {
+		if (EsCorrecto() && automatico) {
             controller.checkearEstado();
         }
     }
