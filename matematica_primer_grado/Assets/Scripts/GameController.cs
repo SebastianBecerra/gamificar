@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour {
     [HideInInspector] public List< EsCheckeable> chequear = new List<EsCheckeable>();
-    [HideInInspector] public GameObject popUp;
+    popUpScript popUp;
 
 	// Use this for initialization
 	void Start () {
-        popUp = GameObject.FindGameObjectWithTag("popUp");
-        if (popUp != null) {
-            popUp.SetActive(false);
-        }
+        popUp = FindObjectOfType<popUpScript>();
 	}
     public void checkearEstado() {
         if (chequear.Count != 0) {
@@ -29,8 +26,6 @@ public class GameController : MonoBehaviour {
     }
     public void invocarPopUp() {
         Debug.Log("win");
-        if (popUp != null) {
-            popUp.SetActive(true);
-        }
+        popUp.Bien();
     }
 }
