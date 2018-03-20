@@ -77,10 +77,18 @@ public class popUpScript : MonoBehaviour {
         activeScene = SceneManager.GetActiveScene().name.ToString();//obtengo el nombre de la escena para controlar el nombre
         popUp = GameObject.FindGameObjectWithTag("popUp"); //referencia a los popUps
         popUpMal = GameObject.FindGameObjectWithTag("popUpMal");
-        acierto = GameObject.FindGameObjectWithTag("popUpAcierto");
-        error = GameObject.FindGameObjectWithTag("popUpError");
-        posIniAcierto = acierto.transform.position;//asigno las posiciones de acierto y error en sus pos iniciales
-        posIniError = error.transform.position;
+        
+       
+		if (acierto = GameObject.FindGameObjectWithTag("popUpAcierto")) 
+		{
+			
+			posIniAcierto = acierto.transform.position;//asigno las posiciones de acierto y error en sus pos iniciales
+		}
+		if(error = GameObject.FindGameObjectWithTag("popUpError"))
+		{
+			
+			posIniError = error.transform.position;
+		}
         if (popUp != null)//desactiva los popUps al comenzar la escena
         {
             popUp.SetActive(false);
