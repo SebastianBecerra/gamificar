@@ -11,7 +11,7 @@ public class stageManager : MonoBehaviour
 
     [HideInInspector]public int[] value10, value30, value60, value100; //valor para cada dificultad
     [HideInInspector]public bool reinicio; //bandera para reiniciar los sprites
-    public int longitud; //longitud de los array 
+    //public int longitud; //longitud de los array 
 
     private void Awake()
     {
@@ -25,10 +25,10 @@ public class stageManager : MonoBehaviour
             Destroy(gameObject);
         }
         //inicializacion de arrays
-        value10 = new int[longitud];
-        value30 = new int[longitud];
-        value60 = new int[longitud];
-        value100 = new int[longitud];
+        value10 = new int[8];
+        value30 = new int[5];
+        value60 = new int[5];
+        value100 = new int[5];
     }
 
     
