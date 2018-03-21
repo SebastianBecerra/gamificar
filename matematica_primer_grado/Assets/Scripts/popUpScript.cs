@@ -212,6 +212,26 @@ public class popUpScript : MonoBehaviour {
     //metodo que llama al popUp que indica que se fallo el ejercicio
     public void Mal()
     {
+        switch (nroDif)
+        {
+            case 10:
+                stageManager.instance.value10[nroEtapa] = 0;
+                llenarArray10();
+                break;
+            case 30:
+                stageManager.instance.value30[nroEtapa] = 0;
+                llenarArray30();
+                break;
+            case 60:
+                stageManager.instance.value60[nroEtapa] = 0;
+                llenarArray60();
+                break;
+            case 100:
+                stageManager.instance.value100[nroEtapa] = 0;
+                llenarArray100();
+                break;
+        }
+
         if (bandera1 && bandera2)
         {
             popUpMal.SetActive(true);

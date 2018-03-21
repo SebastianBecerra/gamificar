@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class changeSprite : MonoBehaviour {
 
@@ -21,9 +22,12 @@ public class changeSprite : MonoBehaviour {
 
     public bool color; //indica en el inspector el tipo de sprite correcto
 
+    public bool imagenUI; //indica si lo que se desea cambiar es una imagenUI en vez de un sprite
+    private Image m_imagen; //componente imagen que indica cual es el sprite corriente
 	
 	void Start () {
         sr = gameObject.GetComponent<SpriteRenderer>();
+        m_imagen = gameObject.GetComponent<Image>();
         switch (color) // inicializa las banderas dependiendo que sprite es el adecuado en consecuencia del valor
                        //asignado en el inspector
         {
@@ -43,31 +47,66 @@ public class changeSprite : MonoBehaviour {
                                                                   //se desactivan, prohibiendo hacer muchos clicks
                                                                   //y en consecuencia activar muchas veces el popUP
         {
-            if (color)
+            switch (imagenUI)//pregunta si lo que se desea cambiar es una imagenUI
             {
-                if (sr.sprite.Equals(spriteAzul))//cambia valor bandera dependiendo el color deseado
-                {
-                    sr.sprite = spriteColor;
-                    bandera = true;
-                }
-                else
-                {
-                    sr.sprite = spriteAzul;
-                    bandera = false;
-                }
-            }
-            else
-            {
-                if (sr.sprite.Equals(spriteColor))
-                {
-                    sr.sprite = spriteAzul;
-                    bandera = true;
-                }
-                else
-                {
-                    sr.sprite = spriteColor;
-                    bandera = false;
-                }
+                //sino cambia sprite component
+                case false:
+                    if (color)
+                    {
+                        if (sr.sprite.Equals(spriteAzul))//cambia valor bandera dependiendo el color deseado
+                        {
+                            sr.sprite = spriteColor;
+                            bandera = true;
+                        }
+                        else
+                        {
+                            sr.sprite = spriteAzul;
+                            bandera = false;
+                        }
+                    }
+                    else
+                    {
+                        if (sr.sprite.Equals(spriteColor))
+                        {
+                            sr.sprite = spriteAzul;
+                            bandera = true;
+                        }
+                        else
+                        {
+                            sr.sprite = spriteColor;
+                            bandera = false;
+                        }
+                    }
+                    break;
+                //si es verdad cambiba image sprite component
+                case true:
+                    if (color)
+                    {
+                        if (m_imagen.sprite.Equals(spriteAzul))//cambia valor bandera dependiendo el color deseado
+                        {
+                            m_imagen.sprite = spriteColor;
+                            bandera = true;
+                        }
+                        else
+                        {
+                            m_imagen.sprite=spriteAzul;
+                            bandera = false;
+                        }
+                    }
+                    else
+                    {
+                        if (m_imagen.sprite.Equals(spriteColor))
+                        {
+                            m_imagen.sprite = spriteAzul;
+                            bandera = true;
+                        }
+                        else
+                        {
+                            m_imagen.sprite = spriteColor;
+                            bandera = false;
+                        }
+                    }
+                    break;
             }
         }
         
