@@ -397,7 +397,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 19294753}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -153.70001, y: -171.05, z: 0}
+  m_LocalPosition: {x: -153.69995, y: -171.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 361661268}
@@ -460,7 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -759,6 +759,80 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 55760169}
+--- !u!1 &68788281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 68788282}
+  - component: {fileID: 68788284}
+  - component: {fileID: 68788283}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &68788282
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 68788281}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -150.6998, y: 183.5, z: 0}
+  m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
+  m_Children: []
+  m_Father: {fileID: 305672393}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 249.30019, y: -41.499992}
+  m_SizeDelta: {x: 434.7, y: 46.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &68788283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 68788281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 49ea8ecc81363d140b345f8f91ddcc74, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "BANDAS NUM\xC9RICAS"
+--- !u!222 &68788284
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 68788281}
 --- !u!1 &83609901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,7 +1418,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 127182115}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.299988, y: -111.05, z: 0}
+  m_LocalPosition: {x: 26.300049, y: -111.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1098467798}
@@ -1407,7 +1481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 1
   imagenUI: 1
@@ -1497,7 +1571,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 127441643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 266.3, y: -111.05, z: 0}
+  m_LocalPosition: {x: 266.30005, y: -111.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1070345411}
@@ -1560,7 +1634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -1650,7 +1724,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 129409485}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -273.7, y: 8.949997, z: 0}
+  m_LocalPosition: {x: -273.69995, y: 8.949982, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1522251231}
@@ -1707,7 +1781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -1941,7 +2015,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 156663927}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 146.29999, y: -51.050003, z: 0}
+  m_LocalPosition: {x: 146.30005, y: -51.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 989956828}
@@ -2004,7 +2078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -2168,7 +2242,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 162178524}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.299988, y: 8.949997, z: 0}
+  m_LocalPosition: {x: 26.300049, y: 8.949982, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 187720196}
@@ -2217,7 +2291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -2620,7 +2694,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 203615923}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 266.3, y: 8.949997, z: 0}
+  m_LocalPosition: {x: 266.30005, y: 8.949982, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 103451927}
@@ -2669,7 +2743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -2892,6 +2966,98 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 239367992}
+--- !u!1 &253319713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 253319714}
+  - component: {fileID: 253319717}
+  - component: {fileID: 253319716}
+  - component: {fileID: 253319715}
+  m_Layer: 5
+  m_Name: Panel (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &253319714
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 253319713}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.0002136, y: 120, z: 0}
+  m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
+  m_Children: []
+  m_Father: {fileID: 1773247649}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1.0002079, y: 120}
+  m_SizeDelta: {x: -197.6001, y: -372.09998}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &253319715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 253319713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2095666955, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 55, y: 60}
+  m_Spacing: {x: 5, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 10
+--- !u!114 &253319716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 253319713}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 2
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &253319717
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 253319713}
 --- !u!1 &253646744
 GameObject:
   m_ObjectHideFlags: 0
@@ -3266,6 +3432,7 @@ RectTransform:
   - {fileID: 804335745}
   - {fileID: 530914674}
   - {fileID: 1395046444}
+  - {fileID: 68788282}
   m_Father: {fileID: 1773247649}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3606,7 +3773,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 341242920}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -93.70001, y: -171.05, z: 0}
+  m_LocalPosition: {x: -93.69995, y: -171.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1875859026}
@@ -3669,7 +3836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 1
   imagenUI: 1
@@ -4318,7 +4485,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 362638967}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -273.7, y: -51.050003, z: 0}
+  m_LocalPosition: {x: -273.69995, y: -51.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 406313983}
@@ -4381,7 +4548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -5099,7 +5266,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 482444522}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 266.3, y: -171.05, z: 0}
+  m_LocalPosition: {x: 266.30005, y: -171.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 2098466420}
@@ -5162,7 +5329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -5324,7 +5491,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 508343773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.299988, y: -171.05, z: 0}
+  m_LocalPosition: {x: 26.300049, y: -171.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1702341778}
@@ -5387,7 +5554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -5882,7 +6049,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 530914673}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 400.24, y: 225, z: 0}
+  m_LocalPosition: {x: 400.23996, y: 224.99998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 305672393}
@@ -6045,7 +6212,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 543717625}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 86.29999, y: -111.05, z: 0}
+  m_LocalPosition: {x: 86.30005, y: -111.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1000352646}
@@ -6108,7 +6275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -7569,7 +7736,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 697882053}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -153.70001, y: 8.949997, z: 0}
+  m_LocalPosition: {x: -153.69995, y: 8.949982, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 259772491}
@@ -7618,7 +7785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 1
   imagenUI: 1
@@ -7794,7 +7961,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 706231279}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -93.70001, y: -51.050003, z: 0}
+  m_LocalPosition: {x: -93.69995, y: -51.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 392821705}
@@ -7857,7 +8024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 1
   imagenUI: 1
@@ -8636,7 +8803,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 782337964}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -213.70001, y: -111.05, z: 0}
+  m_LocalPosition: {x: -213.69995, y: -111.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 900483774}
@@ -8699,7 +8866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -8994,7 +9161,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 804335744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 400, y: 225, z: 0}
+  m_LocalPosition: {x: 399.99997, y: 224.99998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 305672393}
@@ -9109,7 +9276,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 807422116}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 266.3, y: -51.050003, z: 0}
+  m_LocalPosition: {x: 266.30005, y: -51.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1838640380}
@@ -9172,7 +9339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -9262,7 +9429,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 812851803}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 206.29999, y: 8.949997, z: 0}
+  m_LocalPosition: {x: 206.30005, y: 8.949982, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 161829439}
@@ -9311,7 +9478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -9415,7 +9582,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 813224772}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -93.70001, y: 8.949997, z: 0}
+  m_LocalPosition: {x: -93.69995, y: 8.949982, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1822429002}
@@ -9464,7 +9631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -9994,7 +10161,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 859456762}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -213.70001, y: 8.949997, z: 0}
+  m_LocalPosition: {x: -213.69995, y: 8.949982, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1169055225}
@@ -10043,7 +10210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 1
   imagenUI: 1
@@ -10147,7 +10314,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 875167015}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 146.29999, y: -171.05, z: 0}
+  m_LocalPosition: {x: 146.30005, y: -171.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 618650499}
@@ -10210,7 +10377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 1
   imagenUI: 1
@@ -10739,7 +10906,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 924489871}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -213.70001, y: -171.05, z: 0}
+  m_LocalPosition: {x: -213.69995, y: -171.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 349100427}
@@ -10802,7 +10969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -10970,7 +11137,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931428116}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -33.700012, y: -171.05, z: 0}
+  m_LocalPosition: {x: -33.69995, y: -171.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 2080330958}
@@ -11033,7 +11200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -11347,7 +11514,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 956824920}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -273.7, y: -111.05, z: 0}
+  m_LocalPosition: {x: -273.69995, y: -111.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1630894307}
@@ -11410,7 +11577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -11576,7 +11743,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 977657750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -357.5475, y: 0, z: 0}
+  m_LocalPosition: {x: -357.54752, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1359292716}
@@ -12271,7 +12438,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1060008765}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 86.29999, y: -171.05, z: 0}
+  m_LocalPosition: {x: 86.30005, y: -171.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1865506030}
@@ -12334,7 +12501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 1
   imagenUI: 1
@@ -14062,7 +14229,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1321145684}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 35, z: 0}
+  m_LocalPosition: {x: 0, y: 34.999985, z: 0}
   m_LocalScale: {x: 0.99986476, y: 0.99986476, z: 0.99986476}
   m_Children:
   - {fileID: 1192597467}
@@ -14564,7 +14731,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1359292715}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 95, z: 0}
+  m_LocalPosition: {x: 0, y: 94.999985, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 790852400}
@@ -14937,7 +15104,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1395046443}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 400, y: 225, z: 0}
+  m_LocalPosition: {x: 399.99997, y: 224.99998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1091835632}
@@ -15074,7 +15241,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1420934078}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -33.700012, y: -51.050003, z: 0}
+  m_LocalPosition: {x: -33.69995, y: -51.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 552647295}
@@ -15137,7 +15304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -15199,6 +15366,98 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1420934078}
+--- !u!1 &1421260836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1421260837}
+  - component: {fileID: 1421260840}
+  - component: {fileID: 1421260839}
+  - component: {fileID: 1421260838}
+  m_Layer: 5
+  m_Name: Panel (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1421260837
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1421260836}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.0002136, y: 115, z: 0}
+  m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
+  m_Children: []
+  m_Father: {fileID: 1773247649}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1.0002136, y: 115}
+  m_SizeDelta: {x: -197.59998, y: -372.10004}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1421260838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1421260836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2095666955, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 55, y: 60}
+  m_Spacing: {x: 5, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 10
+--- !u!114 &1421260839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1421260836}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 2
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1421260840
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1421260836}
 --- !u!1 &1425095714
 GameObject:
   m_ObjectHideFlags: 0
@@ -15610,7 +15869,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1445687694}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -153.70001, y: -51.050003, z: 0}
+  m_LocalPosition: {x: -153.69995, y: -51.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 253646745}
@@ -15673,7 +15932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -16744,7 +17003,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1587434148}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -33.700012, y: -111.05, z: 0}
+  m_LocalPosition: {x: -33.69995, y: -111.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1037191768}
@@ -16807,7 +17066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 1
   imagenUI: 1
@@ -16895,7 +17154,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1594884201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 397, y: -218, z: 0}
+  m_LocalPosition: {x: 396.99997, y: -217.99998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 596339218}
@@ -16970,7 +17229,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1622110111}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 206.29999, y: -111.05, z: 0}
+  m_LocalPosition: {x: 206.30005, y: -111.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 2041049812}
@@ -17033,7 +17292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -17431,7 +17690,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1655886078}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 86.29999, y: -51.050003, z: 0}
+  m_LocalPosition: {x: 86.30005, y: -51.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 836713383}
@@ -17494,7 +17753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -17588,10 +17847,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c0f4597e125d1b43b5397e8931bee9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaAnterior: Menu
+  escenaAnterior: tablaInput60
   escenaSiguiente: Menu
   nroEtapa: 0
-  nroDif: 60
+  nroDif: 100
   bandera1: 0
   bandera2: 0
   check: 0
@@ -17771,7 +18030,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1663287143}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -25, z: 0}
+  m_LocalPosition: {x: 0, y: -25.000015, z: 0}
   m_LocalScale: {x: 0.99986476, y: 0.99986476, z: 0.99986476}
   m_Children:
   - {fileID: 585659055}
@@ -18014,7 +18273,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1678268849}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -33.700012, y: 8.949997, z: 0}
+  m_LocalPosition: {x: -33.69995, y: 8.949982, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 343238953}
@@ -18063,7 +18322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -18167,7 +18426,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1680477882}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -273.7, y: -171.05, z: 0}
+  m_LocalPosition: {x: -273.69995, y: -171.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1458508069}
@@ -18230,7 +18489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -18448,7 +18707,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1697481157}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -85, z: 0}
+  m_LocalPosition: {x: 0, y: -85.000015, z: 0}
   m_LocalScale: {x: 0.99986476, y: 0.99986476, z: 0.99986476}
   m_Children:
   - {fileID: 778133120}
@@ -18739,7 +18998,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1701372508}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -213.70001, y: -51.050003, z: 0}
+  m_LocalPosition: {x: -213.69995, y: -51.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 239367993}
@@ -18802,7 +19061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -19114,7 +19373,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1748680404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.299988, y: -51.050003, z: 0}
+  m_LocalPosition: {x: 26.300049, y: -51.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1439877410}
@@ -19177,7 +19436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 1
   imagenUI: 1
@@ -19248,7 +19507,7 @@ RectTransform:
   m_GameObject: {fileID: 1658088391}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.026666667, y: 0.026666667, z: 0.026666667}
+  m_LocalScale: {x: 0.02666667, y: 0.02666667, z: 0.02666667}
   m_Children:
   - {fileID: 305672393}
   - {fileID: 2086668663}
@@ -19261,6 +19520,8 @@ RectTransform:
   - {fileID: 2075052908}
   - {fileID: 1594884202}
   - {fileID: 2002426443}
+  - {fileID: 253319714}
+  - {fileID: 1421260837}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19874,7 +20135,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1831326512}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 206.29999, y: -51.050003, z: 0}
+  m_LocalPosition: {x: 206.30005, y: -51.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1290701809}
@@ -19937,7 +20198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 1
   imagenUI: 1
@@ -21156,7 +21417,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1945137080}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 86.29999, y: 8.949997, z: 0}
+  m_LocalPosition: {x: 86.30005, y: 8.949982, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1522073423}
@@ -21205,7 +21466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -21387,7 +21648,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1949670399}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -153.70001, y: -111.05, z: 0}
+  m_LocalPosition: {x: -153.69995, y: -111.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1477634348}
@@ -21450,7 +21711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 1
   imagenUI: 1
@@ -21575,7 +21836,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2000520553}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -93.70001, y: -111.05, z: 0}
+  m_LocalPosition: {x: -93.69995, y: -111.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1436720964}
@@ -21638,7 +21899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -21765,7 +22026,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2036671819}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 206.29999, y: -171.05, z: 0}
+  m_LocalPosition: {x: 206.30005, y: -171.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1780886716}
@@ -21828,7 +22089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
@@ -21992,7 +22253,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2041538279}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 146.29999, y: 8.949997, z: 0}
+  m_LocalPosition: {x: 146.30005, y: 8.949982, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1659063167}
@@ -22041,7 +22302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 1
   imagenUI: 1
@@ -22518,6 +22779,7 @@ GameObject:
   - component: {fileID: 2092197977}
   - component: {fileID: 2092197976}
   - component: {fileID: 2092197975}
+  - component: {fileID: 2092197978}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -22532,7 +22794,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2092197973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 113, z: 0}
+  m_LocalPosition: {x: -1, y: -278.00003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 129409486}
@@ -22580,7 +22842,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1, y: 113}
+  m_AnchoredPosition: {x: -1, y: -278}
   m_SizeDelta: {x: -197.6, y: -372.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2092197975
@@ -22639,6 +22901,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2092197973}
+--- !u!114 &2092197978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2092197973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b787e3876b21446a420ffeeb1f3d0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duracion: 0.8
+  lugares:
+  - {fileID: 2092197973}
+  - {fileID: 253319713}
+  - {fileID: 1421260836}
+  activarConBoton: 0
 --- !u!1 &2094784587
 GameObject:
   m_ObjectHideFlags: 0
@@ -22975,7 +23254,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2111270790}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 146.29999, y: -111.05, z: 0}
+  m_LocalPosition: {x: 146.30005, y: -111.05002, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 1054602613}
@@ -23038,7 +23317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAzul: {fileID: 21300000, guid: 21a4182349411d44a89b0004eaf071f9, type: 3}
-  spriteColor: {fileID: 21300006, guid: 0247b666052f62f4795b68e58548d149, type: 3}
+  spriteColor: {fileID: 21300010, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
   imagenUI: 1
