@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 using UnityEngine.UI;
 
 public class spriteClickManager : MonoBehaviour {
@@ -15,7 +16,7 @@ public class spriteClickManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         popUp = FindObjectOfType<popUpScript>();
-        check = FindObjectsOfType<changeSprite>(); //retorna una lista de todos los objetos activos con el script changeSprite
+        check = FindObjectsOfType<changeSprite>().OrderBy(g => g.transform.GetSiblingIndex()).ToArray(); ; //retorna una lista de todos los objetos activos con el script changeSprite
         //referencia al boton de la escena
         boton = gameObject.GetComponent<Button>();
         boton.onClick.AddListener(TaskOnClick);//comportamiento onclick() del boton
@@ -23,7 +24,7 @@ public class spriteClickManager : MonoBehaviour {
 	
 
 
-    private bool checkBools()//metodo que retorna si todas las banderas son verdaderas
+    public bool checkBools()//metodo que retorna si todas las banderas son verdaderas
     {
         for (int i=0; i<check.Length; i++)
         {
