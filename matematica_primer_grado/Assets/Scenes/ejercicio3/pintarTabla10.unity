@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 35457855}
   - component: {fileID: 35457857}
   - component: {fileID: 35457858}
+  - component: {fileID: 35457859}
   m_Layer: 5
   m_Name: Image (9)
   m_TagString: color
@@ -269,7 +270,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -289,12 +290,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 35457853}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -324,6 +325,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &35457859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 35457853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &55651897
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +466,7 @@ GameObject:
   - component: {fileID: 56350483}
   - component: {fileID: 56350485}
   - component: {fileID: 56350486}
+  - component: {fileID: 56350487}
   m_Layer: 5
   m_Name: Image (23)
   m_TagString: color
@@ -495,7 +511,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -515,12 +531,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 56350481}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -550,6 +566,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &56350487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 56350481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &103715656
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,6 +967,7 @@ GameObject:
   - component: {fileID: 261438631}
   - component: {fileID: 261438633}
   - component: {fileID: 261438634}
+  - component: {fileID: 261438635}
   m_Layer: 5
   m_Name: Image (22)
   m_TagString: color
@@ -981,7 +1012,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1001,12 +1032,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 261438629}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -1036,6 +1067,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &261438635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 261438629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &261710955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,11 +1214,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 49ea8ecc81363d140b345f8f91ddcc74, type: 3}
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1200,6 +1245,7 @@ GameObject:
   - component: {fileID: 278910422}
   - component: {fileID: 278910424}
   - component: {fileID: 278910425}
+  - component: {fileID: 278910426}
   m_Layer: 5
   m_Name: Image (17)
   m_TagString: color
@@ -1244,7 +1290,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1264,12 +1310,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 278910420}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -1299,6 +1345,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &278910426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 278910420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &300836966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,17 +1385,17 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 300836966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 237, y: 0, z: 0}
+  m_LocalPosition: {x: 214, y: -35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1687624651}
   m_Father: {fileID: 1773247649}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 237, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 214, y: -35}
+  m_SizeDelta: {x: 160, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &300836968
 MonoBehaviour:
@@ -1408,7 +1468,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300002, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1436,12 +1496,12 @@ MonoBehaviour:
   sp: []
   dado: 0
   coloresSprites:
-  - {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
-  - {fileID: 21300006, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
-  - {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  - {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  - {fileID: 21300002, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  - {fileID: 21300008, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   - {fileID: 21300012, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   totalSpritesAlternativos: 4
-  texoDado: {fileID: 0}
+  texoDado: {fileID: 1498434015}
 --- !u!1 &305672392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,16 +1602,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 322776753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 237, y: 67, z: 0}
+  m_LocalPosition: {x: 213, y: 67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 807346554}
   m_Father: {fileID: 1773247649}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 237, y: 67}
+  m_AnchoredPosition: {x: 213, y: 67}
   m_SizeDelta: {x: 160, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &322776755
@@ -1636,8 +1696,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300002, guid: 77b9875cbe242f944a269531064e7e3a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1697,6 +1757,7 @@ GameObject:
   - component: {fileID: 327873432}
   - component: {fileID: 327873434}
   - component: {fileID: 327873435}
+  - component: {fileID: 327873436}
   m_Layer: 5
   m_Name: Image
   m_TagString: color
@@ -1741,7 +1802,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1761,12 +1822,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 327873430}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -1796,6 +1857,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &327873436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 327873430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &328614677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2163,6 +2238,7 @@ GameObject:
   - component: {fileID: 381906869}
   - component: {fileID: 381906871}
   - component: {fileID: 381906872}
+  - component: {fileID: 381906873}
   m_Layer: 5
   m_Name: Image (11)
   m_TagString: color
@@ -2207,7 +2283,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2227,12 +2303,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 381906867}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -2262,6 +2338,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &381906873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 381906867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &390354185
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,6 +2364,7 @@ GameObject:
   - component: {fileID: 390354187}
   - component: {fileID: 390354189}
   - component: {fileID: 390354190}
+  - component: {fileID: 390354191}
   m_Layer: 5
   m_Name: Image (20)
   m_TagString: color
@@ -2318,7 +2409,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2338,12 +2429,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 390354185}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -2373,6 +2464,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &390354191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 390354185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &402273737
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,6 +2701,98 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 432680300}
+--- !u!1 &468224729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 468224730}
+  - component: {fileID: 468224733}
+  - component: {fileID: 468224732}
+  - component: {fileID: 468224731}
+  m_Layer: 5
+  m_Name: panel_pintar (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &468224730
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468224729}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -64.39986, y: 48, z: 0}
+  m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
+  m_Children: []
+  m_Father: {fileID: 1773247649}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -64.39989, y: 48}
+  m_SizeDelta: {x: -402.10007, y: -226.13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &468224731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468224729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2095666955, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 60, y: 60}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 0
+  m_ConstraintCount: 2
+--- !u!114 &468224732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468224729}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &468224733
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468224729}
 --- !u!1 &471723902
 GameObject:
   m_ObjectHideFlags: 0
@@ -3876,6 +4073,7 @@ GameObject:
   - component: {fileID: 625358549}
   - component: {fileID: 625358551}
   - component: {fileID: 625358552}
+  - component: {fileID: 625358553}
   m_Layer: 5
   m_Name: Image (16)
   m_TagString: color
@@ -3920,7 +4118,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3940,12 +4138,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 625358547}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -3975,6 +4173,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &625358553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 625358547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!20 &638007702 stripped
 Camera:
   m_PrefabParentObject: {fileID: 20785219553815312, guid: e14ea2299d6abdd4ebd5da00cf543182,
@@ -4290,7 +4502,7 @@ RectTransform:
   - {fileID: 1723095236}
   - {fileID: 1356139686}
   m_Father: {fileID: 1773247649}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4502,6 +4714,98 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 778133119}
+--- !u!1 &783163501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 783163502}
+  - component: {fileID: 783163505}
+  - component: {fileID: 783163504}
+  - component: {fileID: 783163503}
+  m_Layer: 5
+  m_Name: panel_pintar (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &783163502
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 783163501}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -64.39995, y: 38.000107, z: 0}
+  m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
+  m_Children: []
+  m_Father: {fileID: 1773247649}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -64.39992, y: 38.000103}
+  m_SizeDelta: {x: -402.1, y: -226.13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &783163503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 783163501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2095666955, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 60, y: 60}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 0
+  m_ConstraintCount: 2
+--- !u!114 &783163504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 783163501}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &783163505
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 783163501}
 --- !u!1 &789981328
 GameObject:
   m_ObjectHideFlags: 0
@@ -4908,6 +5212,7 @@ GameObject:
   - component: {fileID: 812253449}
   - component: {fileID: 812253451}
   - component: {fileID: 812253452}
+  - component: {fileID: 812253453}
   m_Layer: 5
   m_Name: Image (14)
   m_TagString: color
@@ -4952,7 +5257,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4972,12 +5277,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 812253447}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -5007,6 +5312,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &812253453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 812253447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &827409719
 GameObject:
   m_ObjectHideFlags: 0
@@ -5298,6 +5617,7 @@ GameObject:
   - component: {fileID: 847337923}
   - component: {fileID: 847337925}
   - component: {fileID: 847337926}
+  - component: {fileID: 847337927}
   m_Layer: 5
   m_Name: Image (6)
   m_TagString: color
@@ -5342,7 +5662,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5362,12 +5682,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 847337921}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -5397,6 +5717,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &847337927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 847337921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &856035029
 GameObject:
   m_ObjectHideFlags: 0
@@ -5925,6 +6259,7 @@ GameObject:
   - component: {fileID: 947689033}
   - component: {fileID: 947689035}
   - component: {fileID: 947689036}
+  - component: {fileID: 947689037}
   m_Layer: 5
   m_Name: Image (15)
   m_TagString: color
@@ -5969,7 +6304,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5989,12 +6324,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 947689031}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -6024,6 +6359,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &947689037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 947689031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &954375035
 GameObject:
   m_ObjectHideFlags: 0
@@ -6287,7 +6636,7 @@ RectTransform:
   - {fileID: 1663287144}
   - {fileID: 1697481158}
   m_Father: {fileID: 1773247649}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6379,17 +6728,17 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1008933648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -86, y: -132, z: 0}
+  m_LocalPosition: {x: -86, y: -140, z: 0}
   m_LocalScale: {x: 1.0001249, y: 1.0001249, z: 1.0001249}
   m_Children:
   - {fileID: 277147989}
   m_Father: {fileID: 1773247649}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -86, y: -132}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -86, y: -140}
+  m_SizeDelta: {x: 180, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1008933650
 MonoBehaviour:
@@ -6462,7 +6811,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6792,6 +7141,7 @@ GameObject:
   - component: {fileID: 1086225658}
   - component: {fileID: 1086225660}
   - component: {fileID: 1086225661}
+  - component: {fileID: 1086225662}
   m_Layer: 5
   m_Name: Image (8)
   m_TagString: color
@@ -6836,7 +7186,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6856,12 +7206,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1086225656}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -6891,6 +7241,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &1086225662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1086225656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &1091835631
 GameObject:
   m_ObjectHideFlags: 0
@@ -7269,7 +7633,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1773247649}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -7561,6 +7925,7 @@ GameObject:
   - component: {fileID: 1246828050}
   - component: {fileID: 1246828052}
   - component: {fileID: 1246828053}
+  - component: {fileID: 1246828054}
   m_Layer: 5
   m_Name: Image (12)
   m_TagString: color
@@ -7605,7 +7970,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7625,12 +7990,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1246828048}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -7660,6 +8025,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &1246828054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1246828048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &1249569711
 GameObject:
   m_ObjectHideFlags: 0
@@ -7672,6 +8051,7 @@ GameObject:
   - component: {fileID: 1249569713}
   - component: {fileID: 1249569715}
   - component: {fileID: 1249569716}
+  - component: {fileID: 1249569717}
   m_Layer: 5
   m_Name: Image (19)
   m_TagString: color
@@ -7716,7 +8096,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7736,12 +8116,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1249569711}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -7771,6 +8151,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &1249569717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1249569711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &1270794567
 GameObject:
   m_ObjectHideFlags: 0
@@ -8096,6 +8490,7 @@ GameObject:
   - component: {fileID: 1301101997}
   - component: {fileID: 1301101999}
   - component: {fileID: 1301102000}
+  - component: {fileID: 1301102001}
   m_Layer: 5
   m_Name: Image (7)
   m_TagString: color
@@ -8140,7 +8535,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8160,12 +8555,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1301101995}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -8195,6 +8590,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &1301102001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1301101995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &1321145684
 GameObject:
   m_ObjectHideFlags: 0
@@ -8377,6 +8786,7 @@ GameObject:
   - component: {fileID: 1325469370}
   - component: {fileID: 1325469372}
   - component: {fileID: 1325469373}
+  - component: {fileID: 1325469374}
   m_Layer: 5
   m_Name: Image (3)
   m_TagString: color
@@ -8421,7 +8831,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8441,12 +8851,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1325469368}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -8476,6 +8886,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &1325469374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1325469368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &1346140905
 GameObject:
   m_ObjectHideFlags: 0
@@ -8488,6 +8912,7 @@ GameObject:
   - component: {fileID: 1346140907}
   - component: {fileID: 1346140909}
   - component: {fileID: 1346140910}
+  - component: {fileID: 1346140911}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: color
@@ -8532,7 +8957,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8552,12 +8977,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1346140905}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -8587,6 +9012,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &1346140911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1346140905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &1356139685
 GameObject:
   m_ObjectHideFlags: 0
@@ -9017,6 +9456,7 @@ GameObject:
   - component: {fileID: 1413041045}
   - component: {fileID: 1413041044}
   - component: {fileID: 1413041043}
+  - component: {fileID: 1413041046}
   m_Layer: 5
   m_Name: panel_pintar
   m_TagString: Untagged
@@ -9031,7 +9471,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1413041041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -64.40001, y: 28, z: 0}
+  m_LocalPosition: {x: -64.40001, y: -353, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 327873431}
@@ -9059,11 +9499,11 @@ RectTransform:
   - {fileID: 261438630}
   - {fileID: 56350482}
   m_Father: {fileID: 1773247649}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -64.4, y: 28}
+  m_AnchoredPosition: {x: -64.4, y: -353}
   m_SizeDelta: {x: -402.1, y: -226.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1413041043
@@ -9122,6 +9562,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1413041041}
+--- !u!114 &1413041046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413041041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b787e3876b21446a420ffeeb1f3d0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duracion: 0.8
+  lugares:
+  - {fileID: 1413041041}
+  - {fileID: 468224729}
+  - {fileID: 783163501}
+  activarConBoton: 0
 --- !u!1 &1425095714
 GameObject:
   m_ObjectHideFlags: 0
@@ -9620,6 +10077,7 @@ GameObject:
   - component: {fileID: 1479538769}
   - component: {fileID: 1479538771}
   - component: {fileID: 1479538772}
+  - component: {fileID: 1479538773}
   m_Layer: 5
   m_Name: Image (5)
   m_TagString: color
@@ -9664,7 +10122,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9684,12 +10142,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1479538767}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -9719,6 +10177,94 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &1479538773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1479538767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
+--- !u!1 &1498434014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1498434017}
+  - component: {fileID: 1498434016}
+  - component: {fileID: 1498434015}
+  m_Layer: 5
+  m_Name: valor_dado
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1498434015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1498434014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 49ea8ecc81363d140b345f8f91ddcc74, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1498434016
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1498434014}
+--- !u!224 &1498434017
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1498434014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 214, y: 68.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1773247649}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 214, y: 68.5}
+  m_SizeDelta: {x: 160, y: 93}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1505444365
 GameObject:
   m_ObjectHideFlags: 0
@@ -10165,6 +10711,7 @@ GameObject:
   - component: {fileID: 1580549037}
   - component: {fileID: 1580549039}
   - component: {fileID: 1580549040}
+  - component: {fileID: 1580549041}
   m_Layer: 5
   m_Name: Image (13)
   m_TagString: color
@@ -10209,7 +10756,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10229,12 +10776,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1580549035}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -10264,6 +10811,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &1580549041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1580549035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &1594884201
 GameObject:
   m_ObjectHideFlags: 0
@@ -10295,7 +10856,7 @@ RectTransform:
   m_Children:
   - {fileID: 596339218}
   m_Father: {fileID: 1773247649}
-  m_RootOrder: 2
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -10791,6 +11352,7 @@ GameObject:
   - component: {fileID: 1677924755}
   - component: {fileID: 1677924757}
   - component: {fileID: 1677924758}
+  - component: {fileID: 1677924759}
   m_Layer: 5
   m_Name: Image (21)
   m_TagString: color
@@ -10835,7 +11397,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10855,12 +11417,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1677924753}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -10890,6 +11452,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &1677924759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1677924753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &1684949567
 GameObject:
   m_ObjectHideFlags: 0
@@ -11072,11 +11648,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 49ea8ecc81363d140b345f8f91ddcc74, type: 3}
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -11308,15 +11884,18 @@ RectTransform:
   m_LocalScale: {x: 0.02666667, y: 0.02666667, z: 0.02666667}
   m_Children:
   - {fileID: 305672393}
-  - {fileID: 2086668663}
-  - {fileID: 1594884202}
   - {fileID: 977657751}
   - {fileID: 1161263181}
   - {fileID: 300836967}
   - {fileID: 322776754}
+  - {fileID: 1498434017}
   - {fileID: 1008933649}
   - {fileID: 1413041042}
+  - {fileID: 2086668663}
+  - {fileID: 1594884202}
   - {fileID: 768852733}
+  - {fileID: 468224730}
+  - {fileID: 783163502}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11480,6 +12059,7 @@ GameObject:
   - component: {fileID: 1808074256}
   - component: {fileID: 1808074258}
   - component: {fileID: 1808074259}
+  - component: {fileID: 1808074260}
   m_Layer: 5
   m_Name: Image (4)
   m_TagString: color
@@ -11524,7 +12104,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11544,12 +12124,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1808074254}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -11579,6 +12159,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &1808074260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1808074254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &1814861393
 GameObject:
   m_ObjectHideFlags: 0
@@ -11591,6 +12185,7 @@ GameObject:
   - component: {fileID: 1814861395}
   - component: {fileID: 1814861397}
   - component: {fileID: 1814861398}
+  - component: {fileID: 1814861399}
   m_Layer: 5
   m_Name: Image (18)
   m_TagString: color
@@ -11635,7 +12230,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11655,12 +12250,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1814861393}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -11690,6 +12285,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &1814861399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814861393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &1822110677
 GameObject:
   m_ObjectHideFlags: 0
@@ -12337,6 +12946,7 @@ GameObject:
   - component: {fileID: 1992369751}
   - component: {fileID: 1992369753}
   - component: {fileID: 1992369754}
+  - component: {fileID: 1992369755}
   m_Layer: 5
   m_Name: Image (10)
   m_TagString: color
@@ -12381,7 +12991,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12401,12 +13011,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1992369749}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -12436,6 +13046,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &1992369755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1992369749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &2004224456
 GameObject:
   m_ObjectHideFlags: 0
@@ -12448,6 +13072,7 @@ GameObject:
   - component: {fileID: 2004224458}
   - component: {fileID: 2004224460}
   - component: {fileID: 2004224461}
+  - component: {fileID: 2004224462}
   m_Layer: 5
   m_Name: Image (2)
   m_TagString: color
@@ -12492,7 +13117,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12512,12 +13137,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2004224456}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cf6d26b2672cad44a173312cbcef857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteAzul: {fileID: 21300000, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
+  spriteAzul: {fileID: 21300014, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   spriteColor: {fileID: 21300004, guid: ee56830f1ff0a5b4ca05edb1703bf951, type: 3}
   bandera: 0
   color: 0
@@ -12547,6 +13172,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 60}
   m_EdgeRadius: 0
+--- !u!114 &2004224462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004224456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ae2ad8dcd83b4181da5b99c06533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuantoAgrandar: 1.1
+  velocidadAgrandar: 0.1
+  velocidadAchicar: 0.1
 --- !u!1 &2068464710
 GameObject:
   m_ObjectHideFlags: 0
@@ -12656,7 +13295,7 @@ RectTransform:
   m_Children:
   - {fileID: 714540769}
   m_Father: {fileID: 1773247649}
-  m_RootOrder: 1
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

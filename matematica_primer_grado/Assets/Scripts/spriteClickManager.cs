@@ -19,7 +19,9 @@ public class spriteClickManager : MonoBehaviour {
         check = FindObjectsOfType<changeSprite>().OrderBy(g => g.transform.GetSiblingIndex()).ToArray(); ; //retorna una lista de todos los objetos activos con el script changeSprite
         //referencia al boton de la escena
         boton = gameObject.GetComponent<Button>();
+        if (boton.transform.tag == "checkColor") { 
         boton.onClick.AddListener(TaskOnClick);//comportamiento onclick() del boton
+        }
     }
 	
 

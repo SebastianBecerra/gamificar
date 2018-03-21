@@ -17,7 +17,7 @@ public class changeSprite : MonoBehaviour {
     public Sprite spriteAzul, spriteColor; //referencia a los sprites(azul y color)
     private SpriteRenderer sr; //componente renderer que indica cual sprite es el sprite corriente
 
-    [HideInInspector]public bool bandera; //variable que indica si es el sprite correcto y accesible desde
+    public bool bandera; //variable que indica si es el sprite correcto y accesible desde
                                           //el script spriteClickManager para realizar el chequeo de todos los sprites
 
     public bool color; //indica en el inspector el tipo de sprite correcto
