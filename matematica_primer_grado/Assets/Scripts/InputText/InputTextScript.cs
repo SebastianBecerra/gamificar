@@ -24,7 +24,7 @@ public class InputTextScript : EsCheckeable {
             case Tipo.Alfa: inputField.contentType = InputField.ContentType.Alphanumeric; break;
             case Tipo.Decimal: inputField.contentType = InputField.ContentType.DecimalNumber; DesactivarPlaceHolder(); break;
             case Tipo.Entero: inputField.contentType = InputField.ContentType.IntegerNumber; DesactivarPlaceHolder(); break;
-            default: inputField.contentType = InputField.ContentType.Alphanumeric; break;
+			default: inputField.contentType = InputField.ContentType.Standard; break;
         }
     }
     void DesactivarPlaceHolder() {
@@ -51,4 +51,8 @@ public class InputTextScript : EsCheckeable {
             return estado;
         }
     }
+
+	public bool estaCompleto(){
+		return inputField.text != "";
+	}
 }

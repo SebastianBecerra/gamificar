@@ -35,4 +35,26 @@ public class ControllerInputText : EsCheckeable {
             return false;
         }
     }
+	//  Chequea si todos los inputs estan completos.
+	public bool estanCompletos(){
+		if (inputsText.Length > 0)
+		{
+			bool estado = true;
+			for (int i = 0; i < inputsText.Length; i++){
+				estado = estado && inputsText[i].estaCompleto();
+			}
+			return estado;
+		}
+		else {
+			return false;
+		}
+	}
+	// si todos los inputs estan completos termina el juego.(ganar alternativo);
+	public void ganarAlCompletar(){
+		if (estanCompletos ()) {
+			controller.invocarPopUp ();
+		} else {
+			controller.invocarPopUpMal ();
+		}
+	}
 }
