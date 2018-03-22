@@ -27,25 +27,33 @@ public class Carta : MonoBehaviour {
 		contenedor = gameObject.transform.GetChild (2).gameObject;
 		dorso.SetActive (bocaAbajo);
 
-		setNumeros ();
-		setObjetosEnCarta ();
+		setNumeros (valor);
 		setSpritesEnObjetos ();
 	}
 
 
-	void setNumeros(){
+	public void setNumeros(int v){
+		valor = v;
 		for (int i = 0; i < numeros.Length; i++) {
 			numeros [i].text = valor.ToString ();
 		}
+		setObjetosEnCarta ();
 	}
 	void setObjetosEnCarta(){
-		for (int i = 0; i < valor-1; i++) {
+		foreach (Transform child in contenedor.transform) {
+			GameObject.Destroy(child.gameObject);
+		}
+		for (int i = 0; i < valor; i++) {
 			Instantiate(objeto ,contenedor.transform);
 		}
+		setSpritesEnObjetos ();
 	}
-	void setSpritesEnObjetos(){
+
+
+	public void setSpritesEnObjetos(){
 		for (int i = 0; i < contenedor.transform.childCount; i++) {
 			Image imagen = contenedor.transform.GetChild (i).GetComponent<Image>();
+			imagen.enabled = true;
 			imagen.sprite = imagenPalo;
 		}
 	}
@@ -53,5 +61,8 @@ public class Carta : MonoBehaviour {
 	//	Da vuelta la carta. activando el UI.Image "Dorso".
 	public void darVuelta(){
 		dorso.SetActive (!(dorso.activeInHierarchy));
+	}
+	void Update () {
+		
 	}
 }
