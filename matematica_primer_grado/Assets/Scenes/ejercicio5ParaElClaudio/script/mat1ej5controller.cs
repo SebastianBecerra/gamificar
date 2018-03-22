@@ -6,35 +6,32 @@ using System.Linq;
 public class mat1ej5controller : MonoBehaviour {
 
 
-    public Carta[] cartas;
-    public bool igualPar1, igualPar2, igualPar3, igualPar4;
-    popUpScript popUp;
+    public Carta[] cartas; //array que va a contener a todos los objetos Carta
+    public bool igualPar1, igualPar2, igualPar3, igualPar4; //banderas en caso de igualdad de pares
+    popUpScript popUp; //referencia a los popUps
 
-    public int estado;
-    public bool banderaUltimoPar = false;
-
+    public int estado; //variable que lleva la cuenta de cantidad de aciertos
+    public bool banderaUltimoPar = false; //cuando estado llega a 3 se activa esta booleana para saber en que momento activar
+                                          //el popUp de stage completa
     private void Awake()
     {
-        cartas = FindObjectsOfType<Carta>().OrderBy(go => go.name).ToArray();
-        darValores();
-        comparacion();
+        cartas = FindObjectsOfType<Carta>().OrderBy(go => go.name).ToArray(); //asigno los objetos carta al array en orden
+        darValores(); //llamada a la funcion que asigna valores aleatorios
+        comparacion(); //comparacion de pares
     }
 
     // Use this for initialization
     void Start() {
-        //cartas = FindObjectsOfType<Carta>().OrderBy(go => go.name).ToArray();
-        popUp= FindObjectOfType<popUpScript>();
-        //darValores();
-        //comparacion();
-        estado = 0;
+        popUp = FindObjectOfType<popUpScript>(); //asignacion del popUp script
+        estado = 0; //se empieza en estado 0, sin aciertos
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-    void darValores()
+    // Update is called once per frame
+    void Update() {
+
+    }
+
+    void darValores()//por cada objeto carta en el array cartas, le asigna un valor random entre 0 y 9 inclusive a cada variable valor
     {
         foreach (Carta a in cartas)
         {
@@ -42,13 +39,13 @@ public class mat1ej5controller : MonoBehaviour {
         }
     }
 
-    void comparacion()
+    void comparacion() //comparo pares(0,1), (2,3), (4,5) y (6,7) en caso de igualdad activo la booleana correspondiente que lo indica
     {
-        //par1
-        if (cartas[0].valor != cartas[1].valor)
+        //par1 (0,1)
+        if (cartas[0].valor != cartas[1].valor)//si los valores no son iguales
         {
-            if (cartas[0].valor > cartas[1].valor)
-            {
+            if (cartas[0].valor > cartas[1].valor)//compara y asigna el nombre mayor al mas grande
+            {                                     //el nomber mayor es la referencia para hacer click bien en caso de que no sean iguales
                 cartas[0].transform.name = "mayor";
                 cartas[1].transform.name = "menor";
             }
@@ -60,9 +57,10 @@ public class mat1ej5controller : MonoBehaviour {
         }
         else
         {
-            igualPar1 = true;
+            igualPar1 = true;//en caso de igualdad del par se asigna true a la booleana, para despues ser usada en los botones
         }
-        //par2
+
+        //par2 (2,3)
         if (cartas[2].valor != cartas[3].valor)
         {
             if (cartas[2].valor > cartas[3].valor)
@@ -80,7 +78,8 @@ public class mat1ej5controller : MonoBehaviour {
         {
             igualPar2 = true;
         }
-        //par3
+
+        //par3 (4,6)
         if (cartas[4].valor != cartas[5].valor)
         {
             if (cartas[4].valor > cartas[5].valor)
@@ -98,7 +97,8 @@ public class mat1ej5controller : MonoBehaviour {
         {
             igualPar3 = true;
         }
-        //par4
+
+        //par4 (6,7)
         if (cartas[6].valor != cartas[7].valor)
         {
             if (cartas[6].valor > cartas[7].valor)
@@ -118,24 +118,27 @@ public class mat1ej5controller : MonoBehaviour {
         }
     }
 
-    public void btnIgualPar1()
+    public void btnIgualPar1()//metodo para el boton de igualdad en el primer par
     {
-        if (igualPar1)
+        if (igualPar1)//si los valores del primer par son iguales
         {
-            popUp.cartelAcierto();
-            estado++;
-            cartas[0].GetComponent<Carta>().enabled = false;
-            cartas[1].GetComponent<Carta>().enabled = false;
-            cartas[0].GetComponent<InteractuableScale>().enabled = false;
-            cartas[1].GetComponent<InteractuableScale>().enabled = false;
-            if (estado == 4)
+            if (estado == 3) //me fijo si este es el ultimo par a checkear y si lo es activo popUp.Bien
             {
                 popUp.Bien();
+            }
+            else//sino al acer click 
+            {
+                popUp.cartelAcierto();// se activa el boton acierto
+                estado++;//se le suma uno a estado para dar a saber que se completo un par
+                cartas[0].GetComponent<Carta>().enabled = false;//se le quita funcionalidad al par
+                cartas[1].GetComponent<Carta>().enabled = false;
+                cartas[0].GetComponent<InteractuableScale>().enabled = false;
+                cartas[1].GetComponent<InteractuableScale>().enabled = false;
             }
         }
         else
         {
-            popUp.Mal();
+            popUp.Mal();//si los valores no son iguales pierde y sale el cartel de intentar de nuevo
         }
     }
 
@@ -143,15 +146,18 @@ public class mat1ej5controller : MonoBehaviour {
     {
         if (igualPar2)
         {
-            popUp.cartelAcierto();
-            estado++;
-            cartas[2].GetComponent<Carta>().enabled = false;
-            cartas[3].GetComponent<Carta>().enabled = false;
-            cartas[2].GetComponent<InteractuableScale>().enabled = false;
-            cartas[3].GetComponent<InteractuableScale>().enabled = false;
-            if (estado == 4)
+            if (estado == 3)
             {
                 popUp.Bien();
+            }
+            else
+            {
+                popUp.cartelAcierto();
+                estado++;
+                cartas[2].GetComponent<Carta>().enabled = false;
+                cartas[3].GetComponent<Carta>().enabled = false;
+                cartas[2].GetComponent<InteractuableScale>().enabled = false;
+                cartas[3].GetComponent<InteractuableScale>().enabled = false;
             }
         }
         else
@@ -164,15 +170,18 @@ public class mat1ej5controller : MonoBehaviour {
     {
         if (igualPar3)
         {
-            popUp.cartelAcierto();
-            estado++;
-            cartas[4].GetComponent<Carta>().enabled = false;
-            cartas[5].GetComponent<Carta>().enabled = false;
-            cartas[4].GetComponent<InteractuableScale>().enabled = false;
-            cartas[5].GetComponent<InteractuableScale>().enabled = false;
-            if (estado == 4)
+            if (estado == 3)
             {
                 popUp.Bien();
+            }
+            else
+            {
+                popUp.cartelAcierto();
+                estado++;
+                cartas[4].GetComponent<Carta>().enabled = false;
+                cartas[5].GetComponent<Carta>().enabled = false;
+                cartas[4].GetComponent<InteractuableScale>().enabled = false;
+                cartas[5].GetComponent<InteractuableScale>().enabled = false;
             }
         }
         else
@@ -185,7 +194,7 @@ public class mat1ej5controller : MonoBehaviour {
     {
         if (igualPar4)
         {
-            if (estado == 4)
+            if (estado == 3)
             {
                 popUp.Bien();
             }

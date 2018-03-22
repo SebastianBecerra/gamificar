@@ -5,13 +5,13 @@ using UnityEngine;
 public class mat1ej5clickManager : MonoBehaviour
 {
 
-    mat1ej5controller clicker;
-    popUpScript popUP;
+    mat1ej5controller clicker;//referencia al controller que tiene los componentes de carta 
+    popUpScript popUP;//referenci al popUp
 
     // Use this for initialization
     void Start()
     {
-        clicker = FindObjectOfType<mat1ej5controller>();
+        clicker = FindObjectOfType<mat1ej5controller>();//asinacion a las variables
         popUP = FindObjectOfType<popUpScript>();
     }
 
@@ -21,30 +21,29 @@ public class mat1ej5clickManager : MonoBehaviour
 
     }
 
-    public void OnMouseDown()
+    public void OnMouseDown()//al hacer click
     {
-        if (clicker.estado < 3)
+        if (clicker.estado < 3)//chequeo que no sea el ultimo par
         {
-            if (gameObject.transform.name == "mayor"&&gameObject.GetComponent<Carta>())
-            {
-                popUP.cartelAcierto();
-                clicker.estado++;
-                gameObject.GetComponent<Carta>().enabled = false;
+            if (gameObject.transform.name == "mayor"&&gameObject.GetComponent<Carta>())//si lo que clickeo tiene el nombre mayor
+            {                                                                          //y tiene el componente carta
+                popUP.cartelAcierto();//activo el cartel de acierdo
+                clicker.estado++;//accedo al controller y sump estado
+                gameObject.GetComponent<Carta>().enabled = false;//quito funcionalidad al objeto clickeado
                 gameObject.GetComponent<InteractuableScale>().enabled = false;
-                if (clicker.estado == 3)
+                if (clicker.estado == 3)//si este es el penultimo par invoco funcion para saber que me queda el ultimo par
                 {
                     Invoke("cambiarBandera", 0.5f);
                 }
             }
-
-            else
+            else//si clickeo mal pierdo y aparece el cartel de intentar de nuevo
             {
                 popUP.Mal();
             }
         }
-        if (clicker.banderaUltimoPar)
+        if (clicker.banderaUltimoPar)//si queda solo el ultimo par activo el popUp.Bien en vez de acierto para ganar
         {
-            if (gameObject.transform.name == "mayor")
+            if (gameObject.transform.name == "mayor" && gameObject.GetComponent<Carta>())
             {
                 gameObject.GetComponent<Carta>().enabled = false;
                 gameObject.GetComponent<InteractuableScale>().enabled = false;
