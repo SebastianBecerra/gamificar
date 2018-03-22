@@ -23,6 +23,10 @@ public class mat1ej5clickManager : MonoBehaviour
 
     public void OnMouseDown()//al hacer click
     {
+        if (gameObject.transform.name == "noClick")//si tiene el nombre noClick no entra
+        {
+            return;
+        }
         if (clicker.estado < 3)//chequeo que no sea el ultimo par
         {
             if (gameObject.transform.name == "mayor"&&gameObject.GetComponent<Carta>())//si lo que clickeo tiene el nombre mayor
@@ -31,6 +35,7 @@ public class mat1ej5clickManager : MonoBehaviour
                 clicker.estado++;//accedo al controller y sump estado
                 gameObject.GetComponent<Carta>().enabled = false;//quito funcionalidad al objeto clickeado
                 gameObject.GetComponent<InteractuableScale>().enabled = false;
+                gameObject.transform.name = "check";
                 if (clicker.estado == 3)//si este es el penultimo par invoco funcion para saber que me queda el ultimo par
                 {
                     Invoke("cambiarBandera", 0.5f);
@@ -48,6 +53,10 @@ public class mat1ej5clickManager : MonoBehaviour
                 gameObject.GetComponent<Carta>().enabled = false;
                 gameObject.GetComponent<InteractuableScale>().enabled = false;
                 popUP.Bien();
+                for (int i = 0; i <= clicker.cartas.Length; i++)
+                {
+                    clicker.cartas[i].transform.name = "noClick"; //al ganar seteo todo para que no funcione
+                }
             }
             else
             {
