@@ -25,7 +25,7 @@ public class mat1ej5clickManager : MonoBehaviour
     {
         if (clicker.estado < 3)
         {
-            if (gameObject.transform.tag == "Player"&&gameObject.GetComponent<Carta>())
+            if (gameObject.transform.name == "mayor"&&gameObject.GetComponent<Carta>())
             {
                 popUP.cartelAcierto();
                 clicker.estado++;
@@ -44,7 +44,7 @@ public class mat1ej5clickManager : MonoBehaviour
         }
         if (clicker.banderaUltimoPar)
         {
-            if (gameObject.transform.tag == "Player")
+            if (gameObject.transform.name == "mayor")
             {
                 gameObject.GetComponent<Carta>().enabled = false;
                 gameObject.GetComponent<InteractuableScale>().enabled = false;

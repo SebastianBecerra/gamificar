@@ -5,19 +5,27 @@ using System.Linq;
 
 public class mat1ej5controller : MonoBehaviour {
 
+
     public Carta[] cartas;
-    private bool igualPar1, igualPar2, igualPar3, igualPar4;
+    public bool igualPar1, igualPar2, igualPar3, igualPar4;
     popUpScript popUp;
 
     public int estado;
     public bool banderaUltimoPar = false;
 
-    // Use this for initialization
-    void Start() {
+    private void Awake()
+    {
         cartas = FindObjectsOfType<Carta>().OrderBy(go => go.name).ToArray();
-        popUp= FindObjectOfType<popUpScript>();
         darValores();
         comparacion();
+    }
+
+    // Use this for initialization
+    void Start() {
+        //cartas = FindObjectsOfType<Carta>().OrderBy(go => go.name).ToArray();
+        popUp= FindObjectOfType<popUpScript>();
+        //darValores();
+        //comparacion();
         estado = 0;
     }
 	
@@ -41,11 +49,13 @@ public class mat1ej5controller : MonoBehaviour {
         {
             if (cartas[0].valor > cartas[1].valor)
             {
-                cartas[0].transform.tag = "Player";
+                cartas[0].transform.name = "mayor";
+                cartas[1].transform.name = "menor";
             }
             else
             {
-                cartas[1].transform.tag = "Player";
+                cartas[1].transform.name = "mayor";
+                cartas[0].transform.name = "menor";
             }
         }
         else
@@ -57,11 +67,13 @@ public class mat1ej5controller : MonoBehaviour {
         {
             if (cartas[2].valor > cartas[3].valor)
             {
-                cartas[2].transform.tag = "Player";
+                cartas[2].transform.name = "mayor";
+                cartas[3].transform.name = "menor";
             }
             else
             {
-                cartas[3].transform.tag = "Player";
+                cartas[3].transform.name = "mayor";
+                cartas[2].transform.name = "menor";
             }
         }
         else
@@ -73,11 +85,13 @@ public class mat1ej5controller : MonoBehaviour {
         {
             if (cartas[4].valor > cartas[5].valor)
             {
-                cartas[4].transform.tag = "Player";
+                cartas[4].transform.name = "mayor";
+                cartas[5].transform.name = "menor";
             }
             else
             {
-                cartas[5].transform.tag = "Player";
+                cartas[5].transform.name = "mayor";
+                cartas[4].transform.name = "menor";
             }
         }
         else
@@ -89,11 +103,13 @@ public class mat1ej5controller : MonoBehaviour {
         {
             if (cartas[6].valor > cartas[7].valor)
             {
-                cartas[6].transform.tag = "Player";
+                cartas[6].transform.name = "mayor";
+                cartas[7].transform.name = "menor";
             }
             else
             {
-                cartas[7].transform.tag = "Player";
+                cartas[7].transform.name = "mayor";
+                cartas[6].transform.name = "menor";
             }
         }
         else
