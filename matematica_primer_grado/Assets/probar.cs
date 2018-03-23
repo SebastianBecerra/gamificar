@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CheckwinCartas : MonoBehaviour {
+public class probar : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -12,5 +12,9 @@ public class CheckwinCartas : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+	public void asd()
+	{
+		Debug.Log ("ASDASD");
 	}
 }
