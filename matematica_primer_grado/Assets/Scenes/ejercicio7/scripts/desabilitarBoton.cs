@@ -14,6 +14,8 @@ public class desabilitarBoton : MonoBehaviour
     private AudioClip sonidoAux; //variable que compara el sonido con el que no se encuentra
     private AudioSource sonido; //referencia al audiosource del boton de reproducir sonido
     popUpScript popUp; //referencia a los popups
+    public int aux=0;
+
     // Use this for initialization
     void Start()
     {
@@ -40,6 +42,7 @@ public class desabilitarBoton : MonoBehaviour
         sonidoAux = btn.GetComponent<AudioSource>().clip; //lo guarda para comparacion
         btn.interactable = false; //se hace no interactuable hasta que acierte si se encuentra ese numero o no
         btn_noEsta.GetComponent<desabilitarBoton>().sonidoAux = sonidoAux; //le asigna el sonido auxiliar al otro boton para comparar
+        aux++;
     }
 
     //metodo para el boton que identifica si el numero reproducido no se encuentra en el carton
