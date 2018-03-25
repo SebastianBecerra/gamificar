@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.UI;
 
 public class mat1ej5controller : MonoBehaviour {
 
@@ -13,6 +14,9 @@ public class mat1ej5controller : MonoBehaviour {
     public int estado; //variable que lleva la cuenta de cantidad de aciertos
     public bool banderaUltimoPar = false; //cuando estado llega a 3 se activa esta booleana para saber en que momento activar
                                           //el popUp de stage completa
+
+    public GameObject[] btns;
+
     private void Awake()
     {
         cartas = FindObjectsOfType<Carta>().OrderBy(go => go.name).ToArray(); //asigno los objetos carta al array en orden
@@ -24,6 +28,7 @@ public class mat1ej5controller : MonoBehaviour {
     void Start() {
         popUp = FindObjectOfType<popUpScript>(); //asignacion del popUp script
         estado = 0; //se empieza en estado 0, sin aciertos
+        btns = GameObject.FindGameObjectsWithTag("input2").OrderBy(go => go.name).ToArray();
     }
 
     // Update is called once per frame
@@ -125,20 +130,29 @@ public class mat1ej5controller : MonoBehaviour {
             if (estado == 3) //me fijo si este es el ultimo par a checkear y si lo es activo popUp.Bien
             {
                 popUp.Bien();
+                desactivarCartasyBotones();//quito toda interactividad con la escene
             }
             else//sino al acer click 
             {
                 popUp.cartelAcierto();// se activa el boton acierto
                 estado++;//se le suma uno a estado para dar a saber que se completo un par
+                if (estado == 3)//si ya he acertado 3 veces activo la flag que indica que queda solo un acierto para ganar
+                {
+                    banderaUltimoPar = true;
+                }
                 cartas[0].GetComponent<Carta>().enabled = false;//se le quita funcionalidad al par
                 cartas[1].GetComponent<Carta>().enabled = false;
                 cartas[0].GetComponent<InteractuableScale>().enabled = false;
                 cartas[1].GetComponent<InteractuableScale>().enabled = false;
+                cartas[0].transform.name = "noClick";//cambio nombre al par
+                cartas[1].transform.name = "noClick";
+                btns[0].GetComponent<Button>().interactable = false;//hago no interactuable al boton
             }
         }
         else
         {
             popUp.Mal();//si los valores no son iguales pierde y sale el cartel de intentar de nuevo
+            desactivarCartasyBotones();//quito toda interactividad con la escene
         }
     }
 
@@ -149,20 +163,29 @@ public class mat1ej5controller : MonoBehaviour {
             if (estado == 3)
             {
                 popUp.Bien();
+                desactivarCartasyBotones();
             }
             else
             {
                 popUp.cartelAcierto();
                 estado++;
+                if (estado == 3)
+                {
+                    banderaUltimoPar = true;
+                }
                 cartas[2].GetComponent<Carta>().enabled = false;
                 cartas[3].GetComponent<Carta>().enabled = false;
                 cartas[2].GetComponent<InteractuableScale>().enabled = false;
                 cartas[3].GetComponent<InteractuableScale>().enabled = false;
+                cartas[2].transform.name = "noClick";
+                cartas[3].transform.name = "noClick";
+                btns[1].GetComponent<Button>().interactable = false;
             }
         }
         else
         {
             popUp.Mal();
+            desactivarCartasyBotones();
         }
     }
 
@@ -173,20 +196,29 @@ public class mat1ej5controller : MonoBehaviour {
             if (estado == 3)
             {
                 popUp.Bien();
+                desactivarCartasyBotones();
             }
             else
             {
                 popUp.cartelAcierto();
                 estado++;
+                if (estado == 3)
+                {
+                    banderaUltimoPar = true;
+                }
                 cartas[4].GetComponent<Carta>().enabled = false;
                 cartas[5].GetComponent<Carta>().enabled = false;
                 cartas[4].GetComponent<InteractuableScale>().enabled = false;
                 cartas[5].GetComponent<InteractuableScale>().enabled = false;
+                cartas[2].transform.name = "noClick";
+                cartas[3].transform.name = "noClick";
+                btns[2].GetComponent<Button>().interactable = false;
             }
         }
         else
         {
             popUp.Mal();
+            desactivarCartasyBotones();
         }
     }
 
@@ -197,20 +229,41 @@ public class mat1ej5controller : MonoBehaviour {
             if (estado == 3)
             {
                 popUp.Bien();
+                desactivarCartasyBotones();
             }
             else
             {
                 popUp.cartelAcierto();
                 estado++;
+                if (estado == 3)
+                {
+                    banderaUltimoPar = true;
+                }
                 cartas[6].GetComponent<Carta>().enabled = false;
                 cartas[7].GetComponent<Carta>().enabled = false;
                 cartas[6].GetComponent<InteractuableScale>().enabled = false;
                 cartas[7].GetComponent<InteractuableScale>().enabled = false;
+                cartas[6].transform.name = "noClick";
+                cartas[7].transform.name = "noClick";
+                btns[3].GetComponent<Button>().interactable = false;
             }
         }
         else
         {
             popUp.Mal();
+            desactivarCartasyBotones();
+        }
+    }
+
+    public void desactivarCartasyBotones()//metodo para que las cartas y los botones dejen de ser clickeables en caso de ganar o perder
+    {
+        foreach (Carta b in cartas)
+        {
+            b.transform.name = "noClick";
+        }
+        foreach (GameObject c in btns)
+        {
+            c.GetComponent<Button>().interactable = false;
         }
     }
 }
