@@ -11,6 +11,7 @@ public class CheckwinCartasMatematicamodulo1e5 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Arraycheck = FindObjectsOfType<Ejercicio5MatematicaMod1> ();
+		popup = FindObjectOfType<popUpScript> ();
 	}
 	
 	// Update is called once per frame
