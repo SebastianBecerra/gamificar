@@ -24,13 +24,18 @@ public class InteractuableScale : MonoBehaviour {
 
 	void OnMouseEnter(){
         if (!enabled) return;
-        StartCoroutine ("Agrandar");
+		agrandar ();
 	}
 	void OnMouseExit(){
         if (!enabled) return;
-        StartCoroutine ("Achicar");
+		achicar ();
 	}
-
+	public void agrandar(){
+		StartCoroutine ("Agrandar");
+	}
+	public void achicar (){
+		StartCoroutine ("Achicar");
+	}
 	//	Corrutina que agranda el tamaño del sprite
 	IEnumerator Agrandar() {
 		Vector3 scaleAux = miEscala;
