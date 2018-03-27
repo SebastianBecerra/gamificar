@@ -354,7 +354,7 @@ Transform:
   - {fileID: 1427775892}
   - {fileID: 1625414159}
   m_Father: {fileID: 1773247649}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &68526851
 MonoBehaviour:
@@ -924,6 +924,17 @@ Prefab:
     - target: {fileID: 1468012822305604, guid: 6e2f56a5cc23be54da09d3fdeb74ff36, type: 2}
       propertyPath: m_Name
       value: Button_iguales (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114397036638360840, guid: 6e2f56a5cc23be54da09d3fdeb74ff36,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300024, guid: be9d8c2189f898a4cbd2eeeb2c6d8812,
+        type: 3}
+    - target: {fileID: 114397036638360840, guid: 6e2f56a5cc23be54da09d3fdeb74ff36,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e2f56a5cc23be54da09d3fdeb74ff36, type: 2}
@@ -2535,6 +2546,17 @@ Prefab:
       propertyPath: m_Name
       value: Button_iguales (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114397036638360840, guid: 6e2f56a5cc23be54da09d3fdeb74ff36,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300024, guid: be9d8c2189f898a4cbd2eeeb2c6d8812,
+        type: 3}
+    - target: {fileID: 114397036638360840, guid: 6e2f56a5cc23be54da09d3fdeb74ff36,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e2f56a5cc23be54da09d3fdeb74ff36, type: 2}
   m_IsPrefabParent: 0
@@ -3065,7 +3087,7 @@ Transform:
   - {fileID: 1249400629}
   - {fileID: 112187438}
   m_Father: {fileID: 1773247649}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519186187
 MonoBehaviour:
@@ -4394,7 +4416,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &768852733
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4410,7 +4432,7 @@ RectTransform:
   - {fileID: 1723095236}
   - {fileID: 1356139686}
   m_Father: {fileID: 1773247649}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6688,7 +6710,7 @@ Transform:
   - {fileID: 289961652}
   - {fileID: 370339683}
   m_Father: {fileID: 1773247649}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1045199700
 MonoBehaviour:
@@ -10135,6 +10157,17 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SonIguales
       objectReference: {fileID: 0}
+    - target: {fileID: 114397036638360840, guid: 6e2f56a5cc23be54da09d3fdeb74ff36,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300024, guid: be9d8c2189f898a4cbd2eeeb2c6d8812,
+        type: 3}
+    - target: {fileID: 114397036638360840, guid: 6e2f56a5cc23be54da09d3fdeb74ff36,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e2f56a5cc23be54da09d3fdeb74ff36, type: 2}
   m_IsPrefabParent: 0
@@ -10725,7 +10758,7 @@ Transform:
   - {fileID: 118970637}
   - {fileID: 197148712}
   m_Father: {fileID: 1773247649}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1754858536
 MonoBehaviour:
@@ -10761,11 +10794,11 @@ RectTransform:
   - {fileID: 2086668663}
   - {fileID: 1594884202}
   - {fileID: 977657751}
-  - {fileID: 768852733}
   - {fileID: 68526850}
   - {fileID: 519186186}
   - {fileID: 1754858535}
   - {fileID: 1045199699}
+  - {fileID: 768852733}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11969,7 +12002,7 @@ Prefab:
     - target: {fileID: 224077340612457394, guid: 6e2f56a5cc23be54da09d3fdeb74ff36,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -1.6899874
+      value: -2.08
       objectReference: {fileID: 0}
     - target: {fileID: 224077340612457394, guid: 6e2f56a5cc23be54da09d3fdeb74ff36,
         type: 2}
@@ -12055,6 +12088,17 @@ Prefab:
     - target: {fileID: 1468012822305604, guid: 6e2f56a5cc23be54da09d3fdeb74ff36, type: 2}
       propertyPath: m_Name
       value: Button_iguales (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114397036638360840, guid: 6e2f56a5cc23be54da09d3fdeb74ff36,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300024, guid: be9d8c2189f898a4cbd2eeeb2c6d8812,
+        type: 3}
+    - target: {fileID: 114397036638360840, guid: 6e2f56a5cc23be54da09d3fdeb74ff36,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e2f56a5cc23be54da09d3fdeb74ff36, type: 2}
