@@ -7,6 +7,7 @@ public class Carta : MonoBehaviour {
 	[Header("Variables de instancia")]
 	[Tooltip("Valor de la carta. de 1 a 9")]
 	public int valor;
+	public bool randoom1al9;
 	[Tooltip("Sprite para las imagenes de la carta")]
 	public Sprite imagenPalo;
 	[Tooltip("Como se instancia la carta en la escena al empezar")]
@@ -26,12 +27,15 @@ public class Carta : MonoBehaviour {
 		dorso = gameObject.transform.GetChild (3).gameObject;
 		contenedor = gameObject.transform.GetChild (2).gameObject;
 		dorso.SetActive (bocaAbajo);
-
+		if (randoom1al9) {
+			valor = Random.Range (1, 9);
+		}
 		setNumeros (valor);
-		setSpritesEnObjetos ();
 	}
 
-
+	public int getValor (){
+		return valor;
+	}
 	public void setNumeros(int v){
 		valor = v;
 		for (int i = 0; i < numeros.Length; i++) {
@@ -61,8 +65,5 @@ public class Carta : MonoBehaviour {
 	//	Da vuelta la carta. activando el UI.Image "Dorso".
 	public void darVuelta(){
 		dorso.SetActive (!(dorso.activeInHierarchy));
-	}
-	void Update () {
-		
 	}
 }
