@@ -12,6 +12,7 @@ public class m1ej18dadoController : MonoBehaviour {
     public Button[] botones;
     private int randomInt;
     private int i, j;
+    public bool dado1Listo, dado2Listo;
 
 	// Use this for initialization
 	void Start () {
@@ -36,6 +37,8 @@ public class m1ej18dadoController : MonoBehaviour {
         if (i == 4)
         {
             botones[0].interactable = false;
+            dado1Listo = true;
+
         }
     }
 
@@ -47,6 +50,7 @@ public class m1ej18dadoController : MonoBehaviour {
         if (j == 4)
         {
             botones[1].interactable = false;
+            dado2Listo = true;
         }
     }
 
