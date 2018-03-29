@@ -36,7 +36,7 @@ public class m1ej13cajaController : MonoBehaviour {
 
     private void OnMouseDown()//al hacer click en la caja
     {
-        if (zonaDrop.gameObject.transform.childCount == 10 &&estado==0) //si ya ingreso los 10 objetos y es el primer estado
+        if (zonaDrop.gameObject.transform.childCount >= 10 &&estado==0) //si ya ingreso los 10 objetos y es el primer estado
         {
             estado = 1;//cambio de estado
             foreach(Dragable a in dragChildren)
@@ -64,6 +64,7 @@ public class m1ej13cajaController : MonoBehaviour {
     {
         zonaDrop.GetComponent<Transform>().DOMove(new Vector3(zonaDrop.transform.position.x - longitudMostrar, zonaDrop.transform.position.y, zonaDrop.transform.position.z), 0.5f);
         cartelPregunta.SetActive(true);
+        cartelPregunta.GetComponent<objTransition>().enabled = true;
     }
     
     void SavePositions()//funcion que guarda las posiciones para las transiciones
@@ -79,7 +80,7 @@ public class m1ej13cajaController : MonoBehaviour {
         switch (longitudMostrar)//dependiendo del valor randomizado se checkea el valor ingresado en el input
         {
             case 2:
-                if (inputPlayer.text == "8")//si esta bien muestra el cartel de acierto y carga la siguiente escena
+                if (inputPlayer.text == (zonaDrop.gameObject.transform.childCount * 0.8).ToString())//si esta bien muestra el cartel de acierto y carga la siguiente escena
                 {
                     popUP.cartelAcierto();
                     Invoke("cartelAcierto", 0.4f);
@@ -90,7 +91,7 @@ public class m1ej13cajaController : MonoBehaviour {
                 }
                 break;
             case 3:
-                if (inputPlayer.text == "6")
+                if (inputPlayer.text == (zonaDrop.gameObject.transform.childCount * 0.6).ToString())
                 {
                     popUP.cartelAcierto();
                     Invoke("cartelAcierto", 0.4f);
@@ -101,7 +102,7 @@ public class m1ej13cajaController : MonoBehaviour {
                 }
                 break;
             case 4:
-                if (inputPlayer.text == "4")
+                if (inputPlayer.text == (zonaDrop.gameObject.transform.childCount * 0.4).ToString())
                 {
                     popUP.cartelAcierto();
                     Invoke("cartelAcierto", 0.4f);
@@ -112,7 +113,7 @@ public class m1ej13cajaController : MonoBehaviour {
                 }
                 break;
             case 5:
-                if (inputPlayer.text == "2")
+                if (inputPlayer.text == (zonaDrop.gameObject.transform.childCount * 0.2).ToString())
                 {
                     popUP.cartelAcierto();
                     Invoke("cartelAcierto", 0.4f);
@@ -140,4 +141,5 @@ public class m1ej13cajaController : MonoBehaviour {
     {
         SceneManager.LoadScene(siguienteEscena);
     }
+    
 }
