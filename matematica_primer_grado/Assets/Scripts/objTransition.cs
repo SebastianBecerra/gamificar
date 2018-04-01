@@ -11,6 +11,7 @@ public class objTransition : MonoBehaviour {
     //para que la funcionalidad de volver con el boton funcione bien, el primer elemento de la lista debe ser la posicion inicial
 
 	public float duracion; //cuanto tarda en realizar la transicion
+    public bool ComienzoAutomatico = true;
     public List<GameObject> lugares = new List<GameObject>(); //lista con las posiciones a moverse
     private List<Vector3> positions = new List<Vector3>(); //vector3 que se van a usar en el metodo DoPath
     public bool activarConBoton = false; //indica si el movimiento se realizara despues de dar click a un boton
@@ -20,19 +21,17 @@ public class objTransition : MonoBehaviour {
     // Use this for initialization
     void Start () {
         SavePositions(); //guarda las posiciones del inspector en la lista para usarlas en el metodo DOPath
-        switch (activarConBoton) //indica si el movimiento se activa con boton
-        {
-            //si el check es falso en el inspector el movimiento se hara al comienzo del juego
-            case false: 
-                gameObject.GetComponent<Transform>().DOPath(positions.ToArray(), duracion);
-                break;
-            //si debe activarse por boton, busca el child boton y le añade la funcionalidad
-            case true:
-                btn_transicion = gameObject.GetComponentInChildren<Button>();
-                btn_transicion.onClick.AddListener(TaskOnClick);
-                break;
+        if (activarConBoton){
+            btn_transicion = gameObject.GetComponentInChildren<Button>();
+            btn_transicion.onClick.AddListener(TaskOnClick);
+        }
+        else if (ComienzoAutomatico){
+            moverObjeto();
         }
 	}
+    public bool getRegresar() {
+        return regresar;
+    }
 	
 
     void SavePositions()

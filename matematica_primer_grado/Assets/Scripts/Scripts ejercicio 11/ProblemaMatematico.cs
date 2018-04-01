@@ -9,6 +9,7 @@ public class ProblemaMatematico : ScriptableObject {
 
 	public tipoCuenta tipo;
 	public Sprite sprite;
+    public bool invertirValores;
 	[TextArea]
 	public string inicio;
 	[Space(10)]

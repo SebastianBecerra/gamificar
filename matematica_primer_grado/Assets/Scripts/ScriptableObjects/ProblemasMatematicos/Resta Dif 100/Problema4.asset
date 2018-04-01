@@ -9,17 +9,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de5a7b9538a7e0f40bde0d7987e053ce, type: 3}
-  m_Name: Problema2
+  m_Name: Problema4
   m_EditorClassIdentifier: 
   tipo: 1
-  inicio: "MAR\xCDA TEN\xCDA "
-  randoom: 0
+  sprite: {fileID: 21300012, guid: 4523dad8935aaa44eb30af39ff6f6f9c, type: 3}
+  invertirValores: 1
+  inicio: 'JULIA LEYO '
+  randoom: 1
   numero1: 10
-  max1: 0
-  min1: 0
-  problema: " GLOBOS Y REGAL\xD3 "
+  max1: 50
+  min1: 1
+  problema: ' DE LOS '
   randoom2: 1
   numero2: 0
-  max2: 1
-  min2: 9
-  pregunta: ". \xBFCU\xC1NTOS GLOBOS LE QUEDARON?"
+  max2: 100
+  min2: 51
+  pregunta: " LIBROS DE CUENTOS. \xBFCUANTOS LIBROS LE FALTA LEER?"
