@@ -22,16 +22,16 @@ public class ejercicio17check : MonoBehaviour {
 		
 		if (respuesta == gameObject.transform.GetChild (2).GetComponent<Text> ().text) {
 			gano = true;
-			aux.correctos++;
+		//	aux.correctos++;
 		}
-		else 
+	/*	else 
 		{
 			gano = false;
 			if (aux.correctos != 0) 
 			{
 				aux.correctos--;
 			}
-		}
+		}*/
 
 	}
 }
