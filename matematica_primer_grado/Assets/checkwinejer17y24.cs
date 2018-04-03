@@ -19,16 +19,18 @@ public class checkwinejer17y24 : MonoBehaviour {
 	}
 	public void checkeo()
 	{
+        bool estado = true;
 		for (int i = 0; i < array.Length; i++){
 			aux = array [i];
-			if (!aux.gano) 
-			{
-				popup.Mal ();
-			}
-
+            estado = estado && aux.gano;
 		}
-
-		popup.Bien ();
-
+        if (estado)
+        {
+            popup.Bien();
+        }
+        else
+        {
+            popup.Mal();
+        }
 	}
 }

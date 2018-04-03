@@ -7,10 +7,8 @@ using UnityEngine.UI;
 public class ejercicio17check : MonoBehaviour {
 	public string respuesta;
 	public bool gano;
-	private ejercicio17checkwin aux;
 	// Use this for initialization
 	void Start () {
-		aux = FindObjectOfType<ejercicio17checkwin> ();
 	}
 	
 	// Update is called once per frame
