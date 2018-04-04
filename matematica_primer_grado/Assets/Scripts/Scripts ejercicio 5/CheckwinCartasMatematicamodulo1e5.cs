@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CheckwinCartasMatematicamodulo1e5 : MonoBehaviour {
+	//Script para el checkeo si es correcto el ejercicio
+	//Va en el objeto gamemanager
 	public Ejercicio5MatematicaMod1[] Arraycheck;
 	private Ejercicio5MatematicaMod1 aux;
 	public int clickeados;
@@ -20,14 +22,14 @@ public class CheckwinCartasMatematicamodulo1e5 : MonoBehaviour {
 		if (win) {
 			popup.Bien ();
 		}
-		if (!win && clickeados == 4 ) 
+		if (!win && clickeados == 4 ) // checkea que todas las opciones fueron clickeadas
 		{
 			popup.Mal ();
 		}
 	}
 	bool checkeo()
 	{
-		for (int i = 0; i < Arraycheck.Length; i++){
+		for (int i = 0; i < Arraycheck.Length; i++){ // funcion para el boton que checkea
 			aux = Arraycheck [i];
 			if (!aux.gano) 
 			{

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ScriptEjercicio4matmod1 : MonoBehaviour {
-
+	// Scrip para confirmar si estaw correcto el ejercicio
+	//Contiene la funcion que va a usar el boton de checkeo
 	public DropZone[] array;
 	public bool gano;
 	private popUpScript popup;
@@ -18,7 +19,7 @@ public class ScriptEjercicio4matmod1 : MonoBehaviour {
 	void Update () {
 		
 	}
-	public void checkearRepartir()
+	public void checkearRepartir() // funcion del bonton
 	{
 		foreach (DropZone a in array) {  
 			if (a.name == "DropZone") {
@@ -34,8 +35,5 @@ public class ScriptEjercicio4matmod1 : MonoBehaviour {
 			}
 		}
 	}
-	public void asd()
-	{
-		Debug.Log ("ASD");
-	}
+
 }
