@@ -18,7 +18,7 @@ public class pintarTablaController : MonoBehaviour {
     public Sprite[] coloresSprites; //referencia a los distintos colores que se van a usar en el cambio de color
     private int j; //indice del array de cambio de color
     public int totalSpritesAlternativos; //length del array de colores alternativos
-    private Text texoDado; //display del int aleatorio generado
+    public Text texoDado; //display del int aleatorio generado
 
     void Start (){
         j = 0;
