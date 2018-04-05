@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using DG.Tweening;
 using UnityEngine.UI;
 using System.Text.RegularExpressions;
+using System.Linq;
 
 public class popUpScript : MonoBehaviour {
 
@@ -32,6 +33,11 @@ public class popUpScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        stages10= GameObject.FindGameObjectsWithTag("check 10").OrderBy(g => g.transform.GetSiblingIndex()).ToArray();
+        stages30 = GameObject.FindGameObjectsWithTag("check 30").OrderBy(g => g.transform.GetSiblingIndex()).ToArray();
+        stages60 = GameObject.FindGameObjectsWithTag("check 60").OrderBy(g => g.transform.GetSiblingIndex()).ToArray();
+        stages100 = GameObject.FindGameObjectsWithTag("check 100").OrderBy(g => g.transform.GetSiblingIndex()).ToArray();
+
         scene = SceneManager.GetActiveScene();//obtiene el nombre de la escena
         if (scene.name == "primeraEscena")//si es la primera escena resetea el singleton a valor 0 para los arrays de control
         {

@@ -25,10 +25,10 @@ public class stageManager : MonoBehaviour
             Destroy(gameObject);
         }
         //inicializacion de arrays
-        value10 = new int[8];
-        value30 = new int[5];
-        value60 = new int[5];
-        value100 = new int[5];
+        value10 = new int[23];
+        value30 = new int[17];
+        value60 = new int[16];
+        value100 = new int[16];
     }
 
     
