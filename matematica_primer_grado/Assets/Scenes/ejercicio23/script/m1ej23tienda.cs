@@ -8,13 +8,13 @@ public class m1ej23tienda : MonoBehaviour {
 
     private List<Vector3> positions = new List<Vector3>(); //listas que contienen los lugares a moverse en las transisiones
     public List<GameObject> lugares = new List<GameObject>();
-    public GameObject objMover;
-    private bool regresar;
+    public GameObject objMover;//referencia al objeto a mover
+    private bool regresar;//indica si el objeto hizo su primer recorrido
 
     // Use this for initialization
     void Start () {
-        SavePositions();
-        gameObject.GetComponentInChildren<Text>().text = "VER TIENDA";
+        SavePositions();//llamo al metodo que guarda las posiciones asignadas
+        gameObject.GetComponentInChildren<Text>().text = "VER TIENDA";//cambio el texto del boton al comienzo del juego
     }
 	
 	// Update is called once per frame
@@ -30,25 +30,25 @@ public class m1ej23tienda : MonoBehaviour {
         }
     }
 
-    public void moverObjeto()
+    public void moverObjeto()//metodo que itiliza el boton ver/ocultar tienda
     {
-        if (regresar)
+        if (regresar)//si el boton hizo su primer movimiento
         {
-            ReversePositions();
-            objMover.GetComponent<Transform>().DOPath(positions.ToArray(), 0.2f);
-            ReversePositions();
-            regresar = false;
-            gameObject.GetComponentInChildren<Text>().text = "VER TIENDA";
+            ReversePositions();//revierto el orden de las posiciones
+            objMover.GetComponent<Transform>().DOPath(positions.ToArray(), 0.2f);//muevo el objeto
+            ReversePositions();//vuelvo el orden de las posiciones a su estado original
+            regresar = false;//indico que no tiene que volver
+            gameObject.GetComponentInChildren<Text>().text = "VER TIENDA";//cambio el texto del boton
         }
-        else
+        else//sino
         {
-            objMover.GetComponent<Transform>().DOPath(positions.ToArray(), 0.2f);
-            regresar = true;
-            gameObject.GetComponentInChildren<Text>().text = "OCULTAR TIENDA";
+            objMover.GetComponent<Transform>().DOPath(positions.ToArray(), 0.2f);//muevo el objeto
+            regresar = true;//indico que tiene que volver
+            gameObject.GetComponentInChildren<Text>().text = "OCULTAR TIENDA";//cambio el texto del boton
         }
     }
 
-    void ReversePositions()
+    void ReversePositions()//metodo que revierte el orden de las posiciones para el movimiento
     {
         positions.Reverse();
     }
