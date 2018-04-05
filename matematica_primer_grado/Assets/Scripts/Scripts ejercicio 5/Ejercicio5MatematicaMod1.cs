@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Ejercicio5MatematicaMod1 : MonoBehaviour {
+
+	//	PAREJA
+
 	public int valorClickeado;
 	public int valorchild1, valorchild2;
 	public int valorCorrecto;
@@ -22,29 +25,26 @@ public class Ejercicio5MatematicaMod1 : MonoBehaviour {
 	void Update () {
 		valorchild1 = go1.GetComponent<Carta> ().valor;
 		valorchild2 = go2.GetComponent<Carta> ().valor;
-		correcto ();
 	}
-	void correcto()
+	public bool correcto()
 	{
-		if (valorchild1 > valorchild2)
-		{
+		if (valorchild1 > valorchild2){
 			valorCorrecto = valorchild1;
-
-		} else
-		{
+		} else if(valorchild1 < valorchild2){
 			valorCorrecto = valorchild2;
-		}
-			
-		if (this.transform.GetChild (0).GetComponent<Carta> ().valor == this.transform.GetChild (1).GetComponent<Carta> ().valor) 
-		{
+		} else {
 			if (soniguales) {
-				gano = true;
+				return true;
+			} else {
+				return false;
 			}
 		}
 		if (valorCorrecto == valorClickeado) {
-			gano = true;
+			return true;
+		} else {
+			return false;
 		}
-	
+
 	}
 
 }

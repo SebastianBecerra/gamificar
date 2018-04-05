@@ -38,8 +38,8 @@ public class Carta : MonoBehaviour {
 	}
 	public void setNumeros(int v){
 		valor = v;
-		for (int i = 0; i < numeros.Length; i++) {
-			numeros [i].text = valor.ToString ();
+		for (int i = 0; i < this.numeros.Length; i++) {
+			this.numeros [i].text = valor.ToString ();
 		}
 		setObjetosEnCarta ();
 	}

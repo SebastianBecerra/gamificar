@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+//Script para el checkeo si es correcto el ejercicio
+//Va en el objeto gamemanager
 public class checkewinejercicio15 : MonoBehaviour {
 	public scriptejercicio15 [] array;
 	private scriptejercicio15 aux;
@@ -21,10 +22,10 @@ public class checkewinejercicio15 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		win = checkeo ();
-		if (opciones == correctos) {
+		if (opciones == correctos) {// checkea si todos fueron correctas
 			popup.Bien ();
 		}
-		if (opciones == clickeados && opciones != correctos) 
+		if (opciones == clickeados && opciones != correctos) // checkea que todas las opciones fueron clickeadas y no todas fueron correctas
 		{
 			popup.Mal ();
 		}

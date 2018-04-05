@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+// script para checkear si lo que escribio en el imput text coincide con la respuesta correcta
+// se agrega al imput text
 public class ejercicio17check : MonoBehaviour {
 	public string respuesta;
 	public bool gano;
@@ -22,14 +23,7 @@ public class ejercicio17check : MonoBehaviour {
 			gano = true;
 		//	aux.correctos++;
 		}
-	/*	else 
-		{
-			gano = false;
-			if (aux.correctos != 0) 
-			{
-				aux.correctos--;
-			}
-		}*/
+
 
 	}
 }

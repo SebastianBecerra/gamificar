@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ScriptEjercicio4matmod1 : MonoBehaviour {
-	// Scrip para confirmar si estaw correcto el ejercicio
+	// Script para confirmar si estaw correcto el ejercicio
 	//Contiene la funcion que va a usar el boton de checkeo
 	public DropZone[] array;
 	public bool gano;
