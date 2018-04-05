@@ -257,8 +257,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 68526849}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -91.448, y: 69.715, z: 0}
-  m_LocalScale: {x: 33.714283, y: 33.714283, z: 33.714283}
+  m_LocalPosition: {x: -113, y: 67.864, z: 0}
+  m_LocalScale: {x: 33.039997, y: 33.039997, z: 33.039997}
   m_Children:
   - {fileID: 409991639}
   - {fileID: 1427775892}
@@ -2283,7 +2283,7 @@ Prefab:
     - target: {fileID: 224077340612457394, guid: 6e2f56a5cc23be54da09d3fdeb74ff36,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 6.48
+      value: 6.4799995
       objectReference: {fileID: 0}
     - target: {fileID: 224077340612457394, guid: 6e2f56a5cc23be54da09d3fdeb74ff36,
         type: 2}
@@ -2914,8 +2914,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519186185}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -91.448, y: 69.715, z: 0}
-  m_LocalScale: {x: 33.714283, y: 33.714283, z: 33.714283}
+  m_LocalPosition: {x: -58, y: 67.864, z: 0}
+  m_LocalScale: {x: 33.039997, y: 33.039997, z: 33.039997}
   m_Children:
   - {fileID: 196187227}
   - {fileID: 1249400629}
@@ -4074,7 +4074,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &768852733
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5311,7 +5311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &977657751
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5953,8 +5953,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1045199698}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -91.448, y: 69.715, z: 0}
-  m_LocalScale: {x: 33.714283, y: 33.714283, z: 33.714283}
+  m_LocalPosition: {x: -113, y: 67.864, z: 0}
+  m_LocalScale: {x: 33.039997, y: 33.039997, z: 33.039997}
   m_Children:
   - {fileID: 450977460}
   - {fileID: 289961652}
@@ -6938,10 +6938,10 @@ RectTransform:
   m_Father: {fileID: 977657751}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 42.533173, y: -80}
+  m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1321145686
 BoxCollider2D:
@@ -7235,10 +7235,10 @@ RectTransform:
   m_Father: {fileID: 977657751}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 42.533173, y: -20}
+  m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1359292717
 BoxCollider2D:
@@ -9248,10 +9248,10 @@ RectTransform:
   m_Father: {fileID: 977657751}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 42.533173, y: -140}
+  m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1663287145
 BoxCollider2D:
@@ -9703,10 +9703,10 @@ RectTransform:
   m_Father: {fileID: 977657751}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 42.533173, y: -200}
+  m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1697481159
 BoxCollider2D:
@@ -10242,8 +10242,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1754858534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -91.448, y: 69.715, z: 0}
-  m_LocalScale: {x: 33.714283, y: 33.714283, z: 33.714283}
+  m_LocalPosition: {x: -58, y: 67.864, z: 0}
+  m_LocalScale: {x: 33.039997, y: 33.039997, z: 33.039997}
   m_Children:
   - {fileID: 1939527036}
   - {fileID: 118970637}
@@ -11267,7 +11267,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "BANDAS NUM\xC9RICAS"
+  m_Text: QUIEN TIENE MAS?
 --- !u!222 &1982644323
 CanvasRenderer:
   m_ObjectHideFlags: 0
