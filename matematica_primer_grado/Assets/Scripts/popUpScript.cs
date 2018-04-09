@@ -186,19 +186,19 @@ public class popUpScript : MonoBehaviour {
         switch (nroDif)
         {
             case 10:
-                stageManager.instance.value10[nroEtapa]=1;
+                stageManager.instance.value10[nroEtapa-1]=1;
                 llenarArray10();
                 break;
             case 30:
-                stageManager.instance.value30[nroEtapa] = 1;
+                stageManager.instance.value30[nroEtapa-1] = 1;
                 llenarArray30();
                 break;
             case 60:
-                stageManager.instance.value60[nroEtapa] = 1;
+                stageManager.instance.value60[nroEtapa-1] = 1;
                 llenarArray60();
                 break;
             case 100:
-                stageManager.instance.value100[nroEtapa] = 1;
+                stageManager.instance.value100[nroEtapa-1] = 1;
                 llenarArray100();
                 break;
         }
@@ -221,19 +221,19 @@ public class popUpScript : MonoBehaviour {
         switch (nroDif)
         {
             case 10:
-                stageManager.instance.value10[nroEtapa] = 0;
+                stageManager.instance.value10[nroEtapa-1] = 0;
                 llenarArray10();
                 break;
             case 30:
-                stageManager.instance.value30[nroEtapa] = 0;
+                stageManager.instance.value30[nroEtapa-1] = 0;
                 llenarArray30();
                 break;
             case 60:
-                stageManager.instance.value60[nroEtapa] = 0;
+                stageManager.instance.value60[nroEtapa-1] = 0;
                 llenarArray60();
                 break;
             case 100:
-                stageManager.instance.value100[nroEtapa] = 0;
+                stageManager.instance.value100[nroEtapa-1] = 0;
                 llenarArray100();
                 break;
         }
