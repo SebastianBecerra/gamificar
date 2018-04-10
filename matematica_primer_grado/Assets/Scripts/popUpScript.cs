@@ -31,17 +31,23 @@ public class popUpScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        //encuentro los objetos con el tag correspondiente y los guardo en un array
         finder10 = GameObject.FindGameObjectsWithTag("check 10");
         finder30 = GameObject.FindGameObjectsWithTag("check 30");
         finder60 = GameObject.FindGameObjectsWithTag("check 60");
         finder100 = GameObject.FindGameObjectsWithTag("check 100");
 
+        //seteo longitud de los array que van a contener los elementos a mostrar cuando se complete un stage bien
+        stages10 = new GameObject[23];
+        stages30 = new GameObject[15];
+        stages60 = new GameObject[13];
+        stages100 = new GameObject[13];
+
+        //llamo a las funciones que asignan los valores de un array a otro de manera ordenada
         ordenarArray10();
         ordenarArray30();
         ordenarArray60();
         ordenarArray100();
-
-        
 
         scene = SceneManager.GetActiveScene();//obtiene el nombre de la escena
         if (scene.name == "primeraEscena")//si es la primera escena resetea el singleton a valor 0 para los arrays de control
@@ -195,15 +201,15 @@ public class popUpScript : MonoBehaviour {
                 llenarArray10();
                 break;
             case 30:
-                stageManager.instance.value30[nroEtapa-8] = 1;
+                stageManager.instance.value30[nroEtapa-1] = 1;
                 llenarArray30();
                 break;
             case 60:
-                stageManager.instance.value60[nroEtapa-10] = 1;
+                stageManager.instance.value60[nroEtapa-1] = 1;
                 llenarArray60();
                 break;
             case 100:
-                stageManager.instance.value100[nroEtapa-10] = 1;
+                stageManager.instance.value100[nroEtapa-1] = 1;
                 llenarArray100();
                 break;
         }
@@ -331,7 +337,8 @@ public class popUpScript : MonoBehaviour {
         }
     }
 
-    void ordenarArray10()
+    //funciones que asignan los elementos de un array finder a otro stages de manera ordenada desde 10 a 100
+    void ordenarArray10()//para los stages de dificultad 10
     {
         indexObj = 0;
         for (int i = 0; i < finder10.Length; i++)
@@ -348,7 +355,7 @@ public class popUpScript : MonoBehaviour {
         }
     }
 
-    void ordenarArray30()
+    void ordenarArray30()//para los stages de dificultad 30
     {
         indexObj = 0;
         for (int i = 0; i < finder30.Length; i++)
@@ -365,7 +372,7 @@ public class popUpScript : MonoBehaviour {
         }
     }
 
-    void ordenarArray60()
+    void ordenarArray60()//para los stages de dificultad 60
     {
         indexObj = 0;
         for (int i = 0; i < finder60.Length; i++)
@@ -382,7 +389,7 @@ public class popUpScript : MonoBehaviour {
         }
     }
 
-    void ordenarArray100()
+    void ordenarArray100()//para los stages de dificultad 100
     {
         indexObj = 0;
         for (int i = 0; i < finder100.Length; i++)
