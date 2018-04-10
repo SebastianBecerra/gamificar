@@ -9,7 +9,7 @@ public class stageManager : MonoBehaviour
 
     public static stageManager instance { get; private set; }
 
-    [HideInInspector]public int[] value10, value30, value60, value100; //valor para cada dificultad
+    public int[] value10, value30, value60, value100; //valor para cada dificultad
     [HideInInspector]public bool reinicio; //bandera para reiniciar los sprites
     //public int longitud; //longitud de los array 
 

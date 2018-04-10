@@ -23,20 +23,33 @@ public class popUpScript : MonoBehaviour {
     [HideInInspector]public string activeScene;
 
     //referencias a los sprites de completar stage
-    public GameObject[] stages10;
-    public GameObject[] stages30;
-    public GameObject[] stages60;
-    public GameObject[] stages100;
+    public GameObject[] stages10, stages30, stages60, stages100;
+    [HideInInspector] GameObject[] finder10, finder30, finder60, finder100;
     private Vector3 posIniAcierto,posIniError;//posicion iniciales de los carteles acierto y error
     private Scene scene;//referencia a la primera scene pára reiniciar los vaalores de singleton
-    
+    private int indexObj = 0;
 
-	// Use this for initialization
-	void Start () {
-        stages10= GameObject.FindGameObjectsWithTag("check 10").OrderBy(g => g.transform.GetSiblingIndex()).ToArray();
-        stages30 = GameObject.FindGameObjectsWithTag("check 30").OrderBy(g => g.transform.GetSiblingIndex()).ToArray();
-        stages60 = GameObject.FindGameObjectsWithTag("check 60").OrderBy(g => g.transform.GetSiblingIndex()).ToArray();
-        stages100 = GameObject.FindGameObjectsWithTag("check 100").OrderBy(g => g.transform.GetSiblingIndex()).ToArray();
+    // Use this for initialization
+    void Start () {
+        finder10 = GameObject.FindGameObjectsWithTag("check 10");
+        stages30 = GameObject.FindGameObjectsWithTag("check 30");
+        stages60 = GameObject.FindGameObjectsWithTag("check 60");
+        stages100 = GameObject.FindGameObjectsWithTag("check 100");
+
+        for (int i = 0; i < finder10.Length; i++)
+        {
+
+            for(int j=0; j < finder10.Length; j++)
+            {
+                if (finder10[j].name == indexObj.ToString())
+                {
+                    stages10[i] = finder10[j];
+                }
+            }
+            indexObj++;
+        }
+
+        
 
         scene = SceneManager.GetActiveScene();//obtiene el nombre de la escena
         if (scene.name == "primeraEscena")//si es la primera escena resetea el singleton a valor 0 para los arrays de control
