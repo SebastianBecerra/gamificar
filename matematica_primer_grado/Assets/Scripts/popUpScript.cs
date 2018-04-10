@@ -27,27 +27,19 @@ public class popUpScript : MonoBehaviour {
     [HideInInspector] GameObject[] finder10, finder30, finder60, finder100;
     private Vector3 posIniAcierto,posIniError;//posicion iniciales de los carteles acierto y error
     private Scene scene;//referencia a la primera scene pára reiniciar los vaalores de singleton
-    private int indexObj = 0;
+    private int indexObj;
 
     // Use this for initialization
     void Start () {
         finder10 = GameObject.FindGameObjectsWithTag("check 10");
-        stages30 = GameObject.FindGameObjectsWithTag("check 30");
-        stages60 = GameObject.FindGameObjectsWithTag("check 60");
-        stages100 = GameObject.FindGameObjectsWithTag("check 100");
+        finder30 = GameObject.FindGameObjectsWithTag("check 30");
+        finder60 = GameObject.FindGameObjectsWithTag("check 60");
+        finder100 = GameObject.FindGameObjectsWithTag("check 100");
 
-        for (int i = 0; i < finder10.Length; i++)
-        {
-
-            for(int j=0; j < finder10.Length; j++)
-            {
-                if (finder10[j].name == indexObj.ToString())
-                {
-                    stages10[i] = finder10[j];
-                }
-            }
-            indexObj++;
-        }
+        ordenarArray10();
+        ordenarArray30();
+        ordenarArray60();
+        ordenarArray100();
 
         
 
@@ -203,15 +195,15 @@ public class popUpScript : MonoBehaviour {
                 llenarArray10();
                 break;
             case 30:
-                stageManager.instance.value30[nroEtapa-1] = 1;
+                stageManager.instance.value30[nroEtapa-8] = 1;
                 llenarArray30();
                 break;
             case 60:
-                stageManager.instance.value60[nroEtapa-1] = 1;
+                stageManager.instance.value60[nroEtapa-10] = 1;
                 llenarArray60();
                 break;
             case 100:
-                stageManager.instance.value100[nroEtapa-1] = 1;
+                stageManager.instance.value100[nroEtapa-10] = 1;
                 llenarArray100();
                 break;
         }
@@ -338,5 +330,72 @@ public class popUpScript : MonoBehaviour {
             }
         }
     }
-    
+
+    void ordenarArray10()
+    {
+        indexObj = 0;
+        for (int i = 0; i < finder10.Length; i++)
+        {
+
+            for (int j = 0; j < finder10.Length; j++)
+            {
+                if (finder10[j].name == indexObj.ToString())
+                {
+                    stages10[i] = finder10[j];
+                }
+            }
+            indexObj++;
+        }
+    }
+
+    void ordenarArray30()
+    {
+        indexObj = 0;
+        for (int i = 0; i < finder30.Length; i++)
+        {
+
+            for (int j = 0; j < finder30.Length; j++)
+            {
+                if (finder30[j].name == indexObj.ToString())
+                {
+                    stages30[i] = finder30[j];
+                }
+            }
+            indexObj++;
+        }
+    }
+
+    void ordenarArray60()
+    {
+        indexObj = 0;
+        for (int i = 0; i < finder60.Length; i++)
+        {
+
+            for (int j = 0; j < finder60.Length; j++)
+            {
+                if (finder60[j].name == indexObj.ToString())
+                {
+                    stages60[i] = finder60[j];
+                }
+            }
+            indexObj++;
+        }
+    }
+
+    void ordenarArray100()
+    {
+        indexObj = 0;
+        for (int i = 0; i < finder100.Length; i++)
+        {
+
+            for (int j = 0; j < finder100.Length; j++)
+            {
+                if (finder100[j].name == indexObj.ToString())
+                {
+                    stages100[i] = finder100[j];
+                }
+            }
+            indexObj++;
+        }
+    }
 }
