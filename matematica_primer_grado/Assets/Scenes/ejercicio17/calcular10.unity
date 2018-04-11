@@ -8790,6 +8790,16 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -300
       objectReference: {fileID: 0}
+    - target: {fileID: 114386754455103676, guid: 114293c5b640d614cbccb435fa3b192c,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1294373191}
+    - target: {fileID: 114386754455103676, guid: 114293c5b640d614cbccb435fa3b192c,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 114293c5b640d614cbccb435fa3b192c, type: 2}
   m_IsPrefabParent: 0
