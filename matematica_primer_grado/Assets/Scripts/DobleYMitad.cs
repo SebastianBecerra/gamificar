@@ -35,7 +35,7 @@ public class DobleYMitad : MonoBehaviour {
 			SceneManager.LoadScene ("DobleYMitad10_3");
 		} else {
 			popUp.cartelError();
-			SceneManager.LoadScene ("DobleYMitad10_1");
+			SceneManager.LoadScene ("DobleYMitad10");
 		}
 	}
 	public void DobleDe3(){
@@ -44,7 +44,7 @@ public class DobleYMitad : MonoBehaviour {
 			SceneManager.LoadScene ("DobleYMitad10_4");
 		} else {
 			popUp.cartelError();
-			SceneManager.LoadScene ("DobleYMitad10_1");
+			SceneManager.LoadScene ("DobleYMitad10");
 		}
 	}
 	public void MitadDe10(){
@@ -53,7 +53,7 @@ public class DobleYMitad : MonoBehaviour {
 			SceneManager.LoadScene ("DobleYMitad10_5");
 		} else {
 			popUp.cartelError();
-			SceneManager.LoadScene ("DobleYMitad10_1");
+			SceneManager.LoadScene ("DobleYMitad10");
 		}
 	}
 	public void MitadDe8(){
@@ -61,7 +61,7 @@ public class DobleYMitad : MonoBehaviour {
 			popUp.Bien();
 		} else {
 			popUp.cartelError();
-			SceneManager.LoadScene ("DobleYMitad10_1");
+			SceneManager.LoadScene ("DobleYMitad10");
 		}
 	}
 }

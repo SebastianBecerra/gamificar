@@ -1135,10 +1135,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: f957ae3340a993549bbe9769d73433e4, type: 3}
-    m_FontSize: 14
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -5463,7 +5463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &977657751
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5785,12 +5785,12 @@ Prefab:
     - target: {fileID: 224825656505637198, guid: 114293c5b640d614cbccb435fa3b192c,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 21.144958
+      value: 21.14502
       objectReference: {fileID: 0}
     - target: {fileID: 224825656505637198, guid: 114293c5b640d614cbccb435fa3b192c,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -90.900024
+      value: -90.899994
       objectReference: {fileID: 0}
     - target: {fileID: 224867700426090004, guid: 114293c5b640d614cbccb435fa3b192c,
         type: 2}
@@ -7516,7 +7516,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1321145684}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.24285889, y: 35, z: 0}
+  m_LocalPosition: {x: 0, y: 35, z: 0}
   m_LocalScale: {x: 0.99986476, y: 0.99986476, z: 0.99986476}
   m_Children:
   - {fileID: 1192597467}
@@ -7972,7 +7972,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1359292715}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.24285889, y: 95, z: 0}
+  m_LocalPosition: {x: 0, y: 95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 790852400}
@@ -9888,7 +9888,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1663287144
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10196,7 +10196,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1697481158
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12506,7 +12506,7 @@ Prefab:
     - target: {fileID: 114568929783050764, guid: d433368278e68ad46863ad77b6c454ff,
         type: 2}
       propertyPath: m_Text
-      value: COMPLETAR
+      value: SUMAR 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d433368278e68ad46863ad77b6c454ff, type: 2}
