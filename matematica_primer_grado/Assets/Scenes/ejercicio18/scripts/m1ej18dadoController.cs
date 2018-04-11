@@ -14,6 +14,10 @@ public class m1ej18dadoController : MonoBehaviour {
     private int i, j; //indices para las columnas de los dados
     public bool dado1Listo, dado2Listo; //bool que indica que se completo de usar los dados
 
+    public GameObject[] finderDados, spriteDados, finderDados2, spriteDados2;
+    private int indexDados = 0;
+    public Sprite spr1, spr2, spr3, spr4, spr5, spr6;
+
 	// Use this for initialization
 	void Start () {
         textos = GameObject.FindGameObjectsWithTag("input1").OrderBy(go => go.name).ToArray();//lleno los array
@@ -22,6 +26,35 @@ public class m1ej18dadoController : MonoBehaviour {
         i = 0;//inicializo los indices
         j = 0;
         darValores();//llamo a la funcion dar valores que inicializa los numeros de la primer columna
+
+        finderDados = GameObject.FindGameObjectsWithTag("checkColor");
+        finderDados2 = GameObject.FindGameObjectsWithTag("color");
+        for (int i = 0; i < finderDados.Length; i++)
+        {
+
+            for (int j = 0; j < finderDados.Length; j++)
+            {
+                if (finderDados[j].name == indexDados.ToString())
+                {
+                    spriteDados[i] = finderDados[j];
+                }
+            }
+            indexDados++;
+        }
+        indexDados = 0;
+        for (int i = 0; i < finderDados2.Length; i++)
+        {
+
+            for (int j = 0; j < finderDados2.Length; j++)
+            {
+                if (finderDados2[j].name == indexDados.ToString())
+                {
+                    spriteDados2[i] = finderDados2[j];
+                }
+            }
+            indexDados++;
+        }
+
     }
 	
 	// Update is called once per frame
@@ -34,6 +67,32 @@ public class m1ej18dadoController : MonoBehaviour {
         randomInt = Random.Range(1, 6);//genera un numero aleatorio desde 1 a 6
         textosDado1[i].GetComponent<Text>().text = randomInt.ToString();//asigna el numero a la fila indicada por el indice
         i++;
+        for(int j=0; j < textosDado1.Length; j++)
+        {
+            indexDados = j;
+            switch (textosDado1[j].GetComponent<Text>().text)
+            {
+                case "1":
+                    spriteDados[indexDados].GetComponent<Image>().sprite = spr1;
+                    break;
+                case "2":
+                    spriteDados[indexDados].GetComponent<Image>().sprite = spr2;
+                    break;
+                case "3":
+                    spriteDados[indexDados].GetComponent<Image>().sprite = spr3;
+                    break;
+                case "4":
+                    spriteDados[indexDados].GetComponent<Image>().sprite = spr4;
+                    break;
+                case "5":
+                    spriteDados[indexDados].GetComponent<Image>().sprite = spr5;
+                    break;
+                case "6":
+                    spriteDados[indexDados].GetComponent<Image>().sprite = spr6;
+                    break;
+            }
+            
+        }
         if (i == 4)//si completo todas las filas
         {
             botones[0].interactable = false;//el boton del dado se vuelve no interactuable
@@ -47,6 +106,32 @@ public class m1ej18dadoController : MonoBehaviour {
         randomInt = Random.Range(1, 6);
         textosDado2[j].GetComponent<Text>().text = randomInt.ToString();
         j++;
+        for (int k = 0; k< textosDado2.Length; k++)
+        {
+            indexDados = k;
+            switch (textosDado2[k].GetComponent<Text>().text)
+            {
+                case "1":
+                    spriteDados2[indexDados].GetComponent<Image>().sprite = spr1;
+                    break;
+                case "2":
+                    spriteDados2[indexDados].GetComponent<Image>().sprite = spr2;
+                    break;
+                case "3":
+                    spriteDados2[indexDados].GetComponent<Image>().sprite = spr3;
+                    break;
+                case "4":
+                    spriteDados2[indexDados].GetComponent<Image>().sprite = spr4;
+                    break;
+                case "5":
+                    spriteDados2[indexDados].GetComponent<Image>().sprite = spr5;
+                    break;
+                case "6":
+                    spriteDados2[indexDados].GetComponent<Image>().sprite = spr6;
+                    break;
+            }
+
+        }
         if (j == 4)
         {
             botones[1].interactable = false;
