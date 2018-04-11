@@ -20,6 +20,9 @@ public class pintarTablaController : MonoBehaviour {
     public int totalSpritesAlternativos; //length del array de colores alternativos
     public Text texoDado; //display del int aleatorio generado
 
+    private GameObject sprDado;
+    public Sprite spr1, spr2, spr3, spr4, spr5, spr6;
+
     void Start (){
         j = 0;
         //asignaciones a las referencias
@@ -29,6 +32,9 @@ public class pintarTablaController : MonoBehaviour {
         //cuando empieza da la indicacion de tocar el boton de generar numero seteando texto y tamaño de fuente
         texoDado.GetComponent<Text>().fontSize = 30;
         texoDado.GetComponent<Text>().text = "TIRA EL DADO ↓";
+
+        sprDado = GameObject.FindGameObjectWithTag("error");
+        sprDado.SetActive(false);
     }
 
     //metodo de generar el numero aleatorio
@@ -44,14 +50,38 @@ public class pintarTablaController : MonoBehaviour {
         //controlo que el rango no sobrepase el limite cuando se esta terminando
         if (sp.Length >= 6)
         {
-            dado = Random.Range(1, 6);
+            dado = Random.Range(1, 7);
         }
         else
         {
             dado = Random.Range(1, sp.Length);
         }
+        sprDado.SetActive(true);
         texoDado.GetComponent<Text>().fontSize = 50;//seteo de texto para mostrar el numero
         texoDado.GetComponent<Text>().text = dado.ToString();
+
+        switch (dado)
+        {
+            case 1:
+                sprDado.GetComponent<Image>().sprite = spr1;
+                break;
+            case 2:
+                sprDado.GetComponent<Image>().sprite = spr2;
+                break;
+            case 3:
+                sprDado.GetComponent<Image>().sprite = spr3;
+                break;
+            case 4:
+                sprDado.GetComponent<Image>().sprite = spr4;
+                break;
+            case 5:
+                sprDado.GetComponent<Image>().sprite = spr5;
+                break;
+            case 6:
+                sprDado.GetComponent<Image>().sprite = spr6;
+                break;
+        }
+
         btn.interactable = false;//el boton no se podra volver a presionar hasta que no solcione el primer numero aleatorio
         for (int i = 0; i < dado; i++)//seteo de los objetos a cambiar de sprite para que devuelvan el valor booleano correspondiente
         {
@@ -73,6 +103,7 @@ public class pintarTablaController : MonoBehaviour {
     //metodo que valida si los sprites cambiados concuerdan con el numero generado
     public void validarColor()
     {
+        sprDado.SetActive(false);
         texoDado.GetComponent<Text>().fontSize = 30;//una vez presionado el boton cambia el texto para pedir otro roll de numero aleatorio
         texoDado.GetComponent<Text>().text = "TIRA EL DADO ↓";
         if (checkClor.checkBools())//llama al metodo checkBools que devuelve si todas las banderas de los objetos da true en su comparacion

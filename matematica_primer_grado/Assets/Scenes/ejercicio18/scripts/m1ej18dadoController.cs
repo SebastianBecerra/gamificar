@@ -64,7 +64,7 @@ public class m1ej18dadoController : MonoBehaviour {
 
     public void dado1()//metodo para el primer dado
     {
-        randomInt = Random.Range(1, 6);//genera un numero aleatorio desde 1 a 6
+        randomInt = Random.Range(1, 7);//genera un numero aleatorio desde 1 a 6
         textosDado1[i].GetComponent<Text>().text = randomInt.ToString();//asigna el numero a la fila indicada por el indice
         i++;
         for(int j=0; j < textosDado1.Length; j++)
@@ -103,7 +103,7 @@ public class m1ej18dadoController : MonoBehaviour {
 
     public void dado2()//metodo para el segundo dado
     {
-        randomInt = Random.Range(1, 6);
+        randomInt = Random.Range(1, 7);
         textosDado2[j].GetComponent<Text>().text = randomInt.ToString();
         j++;
         for (int k = 0; k< textosDado2.Length; k++)
