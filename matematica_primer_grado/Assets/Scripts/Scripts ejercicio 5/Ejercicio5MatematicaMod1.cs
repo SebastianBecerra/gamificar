@@ -25,20 +25,25 @@ public class Ejercicio5MatematicaMod1 : MonoBehaviour {
 	void Update () {
 		valorchild1 = go1.GetComponent<Carta> ().valor;
 		valorchild2 = go2.GetComponent<Carta> ().valor;
+		correcto ();
 	}
 	public bool correcto()
 	{
-		if (valorchild1 > valorchild2){
+		if (valorchild1 > valorchild2)
+		{
 			valorCorrecto = valorchild1;
-		} else if(valorchild1 < valorchild2){
+
+		}  if(valorchild1 < valorchild2)
+		{
 			valorCorrecto = valorchild2;
-		} else {
-			if (soniguales) {
-				return true;
-			} else {
-				return false;
-			}
-		}
+		} 
+		if (valorchild1 == valorchild2)
+		{
+			valorCorrecto = 10;
+
+		} 
+	
+	
 		if (valorCorrecto == valorClickeado) {
 			return true;
 		} else {

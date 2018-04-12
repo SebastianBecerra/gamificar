@@ -47,8 +47,8 @@ public class ClickeocartaMatematicamodulo1e5 : MonoBehaviour{
 
 	public void SonIguales()
 	{   
+		parejaPadre.valorClickeado = 10;
 		controllerParejas.clickeados++;
-		parejaPadre.soniguales = true;
 		Desactivar ();
 	}
 }
