@@ -49,11 +49,14 @@ public class MatM1Eje10 : MonoBehaviour {
 				popUp.Bien ();
 			} else {
 				popUp.cartelAcierto();
-				SceneManager.LoadScene (siguienteEscena);
+                Invoke("pasarEscena", 0.8f);
 			}
 
 		} else {
 			popUp.Mal ();
 		}
 	}
+    void pasarEscena() {
+        SceneManager.LoadScene(siguienteEscena);
+    }
 }
