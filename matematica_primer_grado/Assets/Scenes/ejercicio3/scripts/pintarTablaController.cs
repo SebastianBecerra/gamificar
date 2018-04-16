@@ -31,7 +31,7 @@ public class pintarTablaController : MonoBehaviour {
         btn = gameObject.GetComponent<Button>();
         //cuando empieza da la indicacion de tocar el boton de generar numero seteando texto y tamaño de fuente
         texoDado.GetComponent<Text>().fontSize = 30;
-        texoDado.GetComponent<Text>().text = "TIRA EL DADO ↓";
+        texoDado.GetComponent<Text>().text = "TIRÁ EL DADO ↓";
 
         sprDado = GameObject.FindGameObjectWithTag("error");
         sprDado.SetActive(false);
@@ -105,7 +105,7 @@ public class pintarTablaController : MonoBehaviour {
     {
         sprDado.SetActive(false);
         texoDado.GetComponent<Text>().fontSize = 30;//una vez presionado el boton cambia el texto para pedir otro roll de numero aleatorio
-        texoDado.GetComponent<Text>().text = "TIRA EL DADO ↓";
+        texoDado.GetComponent<Text>().text = "TIRÁ EL DADO ↓";
         if (checkClor.checkBools())//llama al metodo checkBools que devuelve si todas las banderas de los objetos da true en su comparacion
         {
             //si  se pintaron los cuadros correctos
