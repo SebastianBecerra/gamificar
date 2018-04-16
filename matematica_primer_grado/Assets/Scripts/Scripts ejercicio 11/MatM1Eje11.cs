@@ -30,10 +30,15 @@ public class MatM1Eje11 : MonoBehaviour
         ManagerInstancia();                                                     //  Crea el problema a resolver.
         setSpritesEnImagenes();
         StartCoroutine(MoverImagenes());                                        //  Baja las imagenes a mostrar del primer problema.
-        inputField.onEndEdit.AddListener(delegate { checkEstadoInput(); });     //  Inicializa el listener del InputText que se activa al terminar ingreso.
+        //inputField.onValueChange.AddListener(delegate { checkEstadoInput(); });     //  Inicializa el listener del InputText que se activa al terminar ingreso.
     }
 
-
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return)) {
+            checkEstadoInput();
+        }
+    }
 
 
     void ManagerInstancia()

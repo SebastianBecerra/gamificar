@@ -102,10 +102,14 @@ public class DobleYMitad : MonoBehaviour {
     IEnumerator loadScene(float r) {
         if (dropZone.gameObject.transform.childCount == cantidadDeHijos)
         {
-            if (siguienteScene != "ultima") {
+            if (siguienteScene != "ultima")
+            {
                 popUp.cartelAcierto();
                 yield return new WaitForSeconds(.7f);
                 SceneManager.LoadScene(siguienteScene);
+            }
+            else {
+                popUp.Bien();
             }
         }
         else {
