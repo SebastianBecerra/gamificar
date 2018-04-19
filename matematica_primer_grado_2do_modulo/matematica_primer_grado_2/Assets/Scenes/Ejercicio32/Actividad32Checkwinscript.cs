@@ -19,24 +19,23 @@ public class Actividad32Checkwinscript : MonoBehaviour {
 	}
 	public void checkeo()
 	{
-		if (dropzone.transform.childCount == 8) {
-			for (int i = 0; i < arrayCorrecto.Length; i++) {
-
-				if (arrayCorrecto [i] != dropzone.transform.GetChild (i).name) {
-					popup.Mal ();
-
-				}
-
+        bool estado = true;
+        if (dropzone.transform.childCount == 8) {
+            for (int i = 0; i < arrayCorrecto.Length; i++) {
+                estado = estado && (arrayCorrecto[i] == dropzone.transform.GetChild(i).name);
 			}
-
-		} else
+            if (estado) {
+                popup.Bien();
+            }
+            else {
+                popup.Mal();
+            }
+        } else
 		{
 			popup.Mal ();
 		}
-		popup.Bien();
-	}
-	public void escorrecto()
-	{
        
+
 	}
+
 }
