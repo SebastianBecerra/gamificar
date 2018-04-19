@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ejercicio27mover : MonoBehaviour {
-public GameObject
+    public GameObject [] arrayhorizontal;
+    public GameObject [] arrayvertical;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,4 +14,13 @@ public GameObject
 	void Update () {
 		
 	}
+    void moverderecha()
+    {
+        int j;
+        for(int i = 0; i< arrayhorizontal.Length; i++)
+        {
+
+        }
+
+    }
 }
