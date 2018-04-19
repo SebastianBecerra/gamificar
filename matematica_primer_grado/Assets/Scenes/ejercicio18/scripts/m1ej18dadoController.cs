@@ -70,25 +70,31 @@ public class m1ej18dadoController : MonoBehaviour {
         for(int j=0; j < textosDado1.Length; j++)
         {
             indexDados = j;
-            switch (textosDado1[j].GetComponent<Text>().text)
+            switch (textosDado1[j].GetComponent<Text>().text)//dependiendo del numero generado se asigna el sprite del dado correspondiente
             {
                 case "1":
                     spriteDados[indexDados].GetComponent<Image>().sprite = spr1;
+                    spriteDados[indexDados].GetComponent<Image>().color = new Color32(0xF4, 0x6A, 0x6A, 0xFF);
                     break;
                 case "2":
                     spriteDados[indexDados].GetComponent<Image>().sprite = spr2;
+                    spriteDados[indexDados].GetComponent<Image>().color = new Color32(0xF4, 0x6A, 0x6A, 0xFF);
                     break;
                 case "3":
                     spriteDados[indexDados].GetComponent<Image>().sprite = spr3;
+                    spriteDados[indexDados].GetComponent<Image>().color = new Color32(0xF4, 0x6A, 0x6A, 0xFF);
                     break;
                 case "4":
                     spriteDados[indexDados].GetComponent<Image>().sprite = spr4;
+                    spriteDados[indexDados].GetComponent<Image>().color = new Color32(0xF4, 0x6A, 0x6A, 0xFF);
                     break;
                 case "5":
                     spriteDados[indexDados].GetComponent<Image>().sprite = spr5;
+                    spriteDados[indexDados].GetComponent<Image>().color = new Color32(0xF4, 0x6A, 0x6A, 0xFF);
                     break;
                 case "6":
                     spriteDados[indexDados].GetComponent<Image>().sprite = spr6;
+                    spriteDados[indexDados].GetComponent<Image>().color = new Color32(0xF4, 0x6A, 0x6A, 0xFF);
                     break;
             }
             
@@ -113,21 +119,27 @@ public class m1ej18dadoController : MonoBehaviour {
             {
                 case "1":
                     spriteDados2[indexDados].GetComponent<Image>().sprite = spr1;
+                    spriteDados2[indexDados].GetComponent<Image>().color = new Color32(0x6A, 0x6B, 0xF4, 0xFF);
                     break;
                 case "2":
                     spriteDados2[indexDados].GetComponent<Image>().sprite = spr2;
+                    spriteDados2[indexDados].GetComponent<Image>().color = new Color32(0x6A, 0x6B, 0xF4, 0xFF);
                     break;
                 case "3":
                     spriteDados2[indexDados].GetComponent<Image>().sprite = spr3;
+                    spriteDados2[indexDados].GetComponent<Image>().color = new Color32(0x6A, 0x6B, 0xF4, 0xFF);
                     break;
                 case "4":
                     spriteDados2[indexDados].GetComponent<Image>().sprite = spr4;
+                    spriteDados2[indexDados].GetComponent<Image>().color = new Color32(0x6A, 0x6B, 0xF4, 0xFF);
                     break;
                 case "5":
                     spriteDados2[indexDados].GetComponent<Image>().sprite = spr5;
+                    spriteDados2[indexDados].GetComponent<Image>().color = new Color32(0x6A, 0x6B, 0xF4, 0xFF);
                     break;
                 case "6":
                     spriteDados2[indexDados].GetComponent<Image>().sprite = spr6;
+                    spriteDados2[indexDados].GetComponent<Image>().color = new Color32(0x6A, 0x6B, 0xF4, 0xFF);
                     break;
             }
 
