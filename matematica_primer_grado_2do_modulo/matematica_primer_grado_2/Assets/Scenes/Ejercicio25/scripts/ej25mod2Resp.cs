@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class ej25mod2Resp : MonoBehaviour {
 
-    public Text respuesta1,respuesta2, respuesta3, respuesta4, respuesta5;
+    public Text respuesta1,respuesta2, respuesta3, respuesta4, respuesta5; //referencia textos con las respuestas a las preguntas
     public bool oso, barco, lampara, baul, lapices, zapatilla;
-    public int valorIndRandom;
+    public int valorIndRandom; //valor que randomiza el objeto a encontrar
+    public GameObject osoObj, barcoObj, lamparaObj, baulObj, lapicesObj, zapatillaObj; //referencia a los objetos a cambiar de color
 
     //1-oso
     //2-barco
@@ -19,30 +20,44 @@ public class ej25mod2Resp : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        setRespuestasInicio();
-        valorIndRandom = Random.Range(1, 7);
+        setRespuestasInicio(); //seteo todas las respuestas a un texto vacio
+        valorIndRandom = Random.Range(1, 7); //randomizo un valor de 1 a 6
 
-        switch (valorIndRandom)
+        switch (valorIndRandom) //dependiendo del valor indico si el objeto debe cambiarse de color para resolver el ejercicio
         {
             case 1:
                 oso = true;
+                osoObj.GetComponent<changeSprite>().color = true;
+                osoObj.GetComponent<changeSprite>().bandera = false;
                 break;
             case 2:
                 barco = true;
+                barcoObj.GetComponent<changeSprite>().color = true;
+                barcoObj.GetComponent<changeSprite>().bandera = false;
                 break;
             case 3:
                 lampara = true;
+                lamparaObj.GetComponent<changeSprite>().color = true;
+                lamparaObj.GetComponent<changeSprite>().bandera = false;
                 break;
             case 4:
                 baul = true;
+                baulObj.GetComponent<changeSprite>().color = true;
+                baulObj.GetComponent<changeSprite>().bandera = false;
                 break;
             case 5:
                 lapices = true;
+                lapicesObj.GetComponent<changeSprite>().color = true;
+                lapicesObj.GetComponent<changeSprite>().bandera = false;
                 break;
             case 6:
                 zapatilla = true;
+                zapatillaObj.GetComponent<changeSprite>().color = true;
+                zapatillaObj.GetComponent<changeSprite>().bandera = false;
                 break;
         }
+
+
 
     }
 	
@@ -51,7 +66,9 @@ public class ej25mod2Resp : MonoBehaviour {
 		
 	}
 
-    public void pregunta1()
+    //metodos para los botones con las preguntas
+
+    public void pregunta1()//¿ESTA A LA DERECHA DE LA LAMPARA?
     {
         switch (valorIndRandom)
         {
@@ -83,7 +100,7 @@ public class ej25mod2Resp : MonoBehaviour {
         }
     }
 
-    public void pregunta2()
+    public void pregunta2()//¿ESTA A LA IZQUIERDA DE LA LAMPARA?
     {
         switch (valorIndRandom)
         {
@@ -115,7 +132,7 @@ public class ej25mod2Resp : MonoBehaviour {
         }
     }
 
-    public void pregunta3()
+    public void pregunta3()//¿ESTA ABAJO DE LOS LAPICES?
     {
         switch (valorIndRandom)
         {
@@ -147,7 +164,7 @@ public class ej25mod2Resp : MonoBehaviour {
         }
     }
 
-    public void pregunta4()
+    public void pregunta4()//¿ESTA ARRIBA DE LOS LAPICES?
     {
         switch (valorIndRandom)
         {
@@ -179,7 +196,7 @@ public class ej25mod2Resp : MonoBehaviour {
         }
     }
 
-    public void pregunta5()
+    public void pregunta5()//¿ESTA ABAJO DEL OSO?
     {
         switch (valorIndRandom)
         {
@@ -212,7 +229,7 @@ public class ej25mod2Resp : MonoBehaviour {
     }
     
 
-    void setRespuestasInicio()
+    void setRespuestasInicio()//setea todas las respuestas a un texto vacio al comenzar el ejercicio
     {
         respuesta1.text = "";
         respuesta2.text = "";
