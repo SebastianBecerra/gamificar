@@ -61,7 +61,7 @@ public class ej28mod2Resp : MonoBehaviour {
             if (continua)//si continua
             {
                 popUp.cartelAcierto();//muestra el cartel de acierto
-                Invoke(escenaSiguiente, 0.5f);//y carga la siguiente escena
+                Invoke("siguienteEscena", 0.5f);//y carga la siguiente escena
             }
             else//sino continua termina el popup bien
             {
@@ -81,7 +81,7 @@ public class ej28mod2Resp : MonoBehaviour {
             if (continua)//si continua
             {
                 popUp.cartelAcierto();//muestra el cartel de acierto
-                Invoke(escenaSiguiente, 0.5f);//y carga la siguiente escena
+                Invoke("siguienteEscena", 0.5f);//y carga la siguiente escena
             }
             else//sino continua muestra el popup bien
             {
@@ -101,7 +101,7 @@ public class ej28mod2Resp : MonoBehaviour {
             if (continua)//si continua
             {
                 popUp.cartelAcierto();//muestra el cartel de acierto
-                Invoke(escenaSiguiente, 0.5f);//y carga la siguiente escena
+                Invoke("siguienteEscena", 0.5f);//y carga la siguiente escena
             }
             else//sino continua muestra el popup bien
             {
