@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class triggerDer : MonoBehaviour {
 
-    [HideInInspector] public bool hayParedDer;
+     public bool hayParedDer;
 
 
     private void OnTriggerEnter2D(Collider2D other)

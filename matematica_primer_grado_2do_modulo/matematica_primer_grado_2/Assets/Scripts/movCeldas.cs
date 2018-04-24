@@ -7,7 +7,7 @@ public class movCeldas : MonoBehaviour {
     //script de movimiento en celdas
     //el objeto que tenga como componente a este script debe tener como child object a 4 objetos con box collider trigger
     //y llevar cada uno los scripts triggerDer, izq,arriba,abajo segun corresponda 
-    //los objetos que no dejan mover al player deben tener el tag "pared"
+    //los objetos que no dejan mover al player deben tener el tag "pared" Y rigidbody2D
 
     Vector3 pos;
     public float velocidad = 2.0f; //velocidad con la que se mueve en el grid
@@ -36,19 +36,19 @@ public class movCeldas : MonoBehaviour {
         
 
         //Inputs detectan a traves de los coliders si hay un objeto en esa direccion y si no hay deja mover al player
-        if (Input.GetKey(KeyCode.A) && transform.position == pos && detIzq.hayParedIzq ==false && !usarBotones)
+        if (Input.GetKeyDown(KeyCode.A) && transform.position == pos && detIzq.hayParedIzq ==false && !usarBotones)
         {           //(-1,0)
             pos += Vector3.left * distancia;
         }
-        if (Input.GetKey(KeyCode.D) && transform.position == pos && detDer.hayParedDer==false && !usarBotones)
+        if (Input.GetKeyDown(KeyCode.D) && transform.position == pos && detDer.hayParedDer==false && !usarBotones)
         {           //(1,0)
             pos += Vector3.right * distancia;
         }
-        if (Input.GetKey(KeyCode.W) && transform.position == pos && detArriba.hayParedArriba==false && !usarBotones)
+        if (Input.GetKeyDown(KeyCode.W) && transform.position == pos && detArriba.hayParedArriba==false && !usarBotones)
         {           //(0,1)
             pos += Vector3.up * distancia;
         }
-        if (Input.GetKey(KeyCode.S) && transform.position == pos && detAbajo.hayParedAbajo ==false && !usarBotones)
+        if (Input.GetKeyDown(KeyCode.S) && transform.position == pos && detAbajo.hayParedAbajo ==false && !usarBotones)
         {           //(0,-1)
             pos += Vector3.down * distancia;
         }
