@@ -5,18 +5,18 @@ using UnityEngine.EventSystems;
 
 public class ej31mod2_2 : MonoBehaviour, IDropHandler {
 
-    public GameObject lugarDrop, huella1, huella2, huella3, cubo, cilindro, piramide;
-    private int id, randomSelect, estado;
-    popUpScript popUp;
-    private bool ultimoObjeto;
+    public GameObject lugarDrop, huella1, huella2, huella3, cubo, cilindro, piramide; //referencia a los tres objetos y a sus huellas
+    private int id, randomSelect, estado; //enteros que indican que figura se dropeo y estado del ejercicio
+    popUpScript popUp; //referencia a los popUps
+    private bool ultimoObjeto; //bandera que indica que queda un acierto por hacer para terminar el ejercicio
 
 	// Use this for initialization
 	void Start () {
-        popUp = FindObjectOfType<popUpScript>();
-        huella1.SetActive(false);
+        popUp = FindObjectOfType<popUpScript>();//asignacion de los popUps
+        huella1.SetActive(false);//seteo las huellas inactivas al comienzo del ejercicio
         huella2.SetActive(false);
         huella3.SetActive(false);
-        estado = 0;
+        estado = 0;//seteo el estado 0 al comienzod el ejercicio
 	}
 	
 	// Update is called once per frame
@@ -24,16 +24,16 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
 		
 	}
 
-    public void OnDrop(PointerEventData eventData)
+    public void OnDrop(PointerEventData eventData)//cuando deja caer uno de los tres objetos en la DropZone
     {
-        Invoke("getChild", 0.1f);
-        Invoke("huella", 0.1f);
+        Invoke("getChild", 0.1f);//llama a la funcion getChild que indica que objeto dropeo
+        Invoke("huella", 0.1f);//llama a la funcion huella que genera una huella aleatoria
     }
 
-    void getChild()
+    void getChild()//funcion que indica que objeto dejo caer
     {
-        id = lugarDrop.transform.GetChild(0).GetComponent<Dragable>().idDropZone1;
-        switch (id)
+        id = lugarDrop.transform.GetChild(0).GetComponent<Dragable>().idDropZone1;//asigno a id la id del objeto
+        switch (id)//controlo que el objeto que dropeo es el correspondiente
         {
             case 1:
                 Debug.Log("cilindro");
@@ -47,9 +47,9 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
         }
     }
 
-    void huella()
+    void huella()//funcion que genera una huella aleatorio para cada objeto dropeado
     {
-        if (id == 1)
+        if (id == 1)//dependiendo de la id del objeto genera un numero aleatorio y dependiendod el resultado genera una huella
         {
             randomSelect = Random.Range(1, 3);
             switch (randomSelect)
@@ -102,12 +102,12 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
         }
     }
 
-    public void checkHuellaSi()
+    public void checkHuellaSi()//controla que la huella generada corresponde al objeto dropeado
     {
         switch (id)
         {
             case 1:
-                if (!ultimoObjeto)
+                if (!ultimoObjeto)//sino es el ultimo objeto muestra el cartel de acierto
                 {
                     if (huella1.activeInHierarchy)
                     {
@@ -125,7 +125,7 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
                         popUp.Mal();
                     }
                 }
-                else
+                else//si es el ultimo objeto muestra el cartel de bien
                 {
                     if (huella1.activeInHierarchy)
                     {
@@ -206,12 +206,12 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
 
 
 
-    public void checkHuellaNo()
+    public void checkHuellaNo()//metodo que indica que la huella no corresponde al objeto
     {
         switch (id)
         {
             case 1:
-                if (!ultimoObjeto)
+                if (!ultimoObjeto)//sino es el ultimo objeto muestra el cartel de acierto
                 {
                     if (!huella1.activeInHierarchy)
                     {
@@ -230,7 +230,7 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
                         popUp.Mal();
                     }
                 }
-                else
+                else//sino muestra el cartel de bien
                 {
                     if (!huella1.activeInHierarchy)
                     {
@@ -314,4 +314,5 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
     {
         ultimoObjeto = true;
     }
+    
 }
