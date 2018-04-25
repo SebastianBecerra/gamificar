@@ -36,19 +36,19 @@ public class movCeldas : MonoBehaviour {
         
 
         //Inputs detectan a traves de los coliders si hay un objeto en esa direccion y si no hay deja mover al player
-        if (Input.GetKeyDown(KeyCode.A) && transform.position == pos && detIzq.hayParedIzq ==false && !usarBotones)
+        if (Input.GetKeyDown(KeyCode.A) && transform.position == pos && detIzq.hayParedIzq ==false)
         {           //(-1,0)
             pos += Vector3.left * distancia;
         }
-        if (Input.GetKeyDown(KeyCode.D) && transform.position == pos && detDer.hayParedDer==false && !usarBotones)
+        if (Input.GetKeyDown(KeyCode.D) && transform.position == pos && detDer.hayParedDer==false)
         {           //(1,0)
             pos += Vector3.right * distancia;
         }
-        if (Input.GetKeyDown(KeyCode.W) && transform.position == pos && detArriba.hayParedArriba==false && !usarBotones)
+        if (Input.GetKeyDown(KeyCode.W) && transform.position == pos && detArriba.hayParedArriba==false)
         {           //(0,1)
             pos += Vector3.up * distancia;
         }
-        if (Input.GetKeyDown(KeyCode.S) && transform.position == pos && detAbajo.hayParedAbajo ==false && !usarBotones)
+        if (Input.GetKeyDown(KeyCode.S) && transform.position == pos && detAbajo.hayParedAbajo ==false)
         {           //(0,-1)
             pos += Vector3.down * distancia;
         }
