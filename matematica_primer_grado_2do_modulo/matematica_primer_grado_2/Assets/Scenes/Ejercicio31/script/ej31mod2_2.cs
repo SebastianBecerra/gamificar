@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ej31mod2_2 : MonoBehaviour, IDropHandler {
 
@@ -10,6 +11,10 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
     popUpScript popUp; //referencia a los popUps
     private bool ultimoObjeto; //bandera que indica que queda un acierto por hacer para terminar el ejercicio
 
+    public GameObject[] objCilindros, objCubos, objPiramide;
+    public int j = 0;
+    public Button btnSi, btnNo;
+
 	// Use this for initialization
 	void Start () {
         popUp = FindObjectOfType<popUpScript>();//asignacion de los popUps
@@ -17,6 +22,8 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
         huella2.SetActive(false);
         huella3.SetActive(false);
         estado = 0;//seteo el estado 0 al comienzod el ejercicio
+        btnNo.interactable = false;
+        btnSi.interactable = false;
 	}
 	
 	// Update is called once per frame
@@ -56,13 +63,21 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
             {
                 case 1:
                     huella1.SetActive(true);
+                    borrarCilindros();
+                    crearHuellaCilindro();
                     huella2.SetActive(false);
+                    borrarCubo();
                     huella3.SetActive(false);
+                    borrarPiramides();
                     break;
                 case 2:
                     huella1.SetActive(false);
+                    borrarCilindros();
                     huella2.SetActive(true);
+                    borrarCubo();
+                    crearHuellaCubo();
                     huella3.SetActive(false);
+                    borrarPiramides();
                     break;
             }
         }
@@ -73,13 +88,21 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
             {
                 case 1:
                     huella1.SetActive(false);
+                    borrarCilindros();
                     huella2.SetActive(false);
+                    borrarCubo();
                     huella3.SetActive(true);
+                    borrarPiramides();
+                    crearHuellaPiramides();
                     break;
                 case 2:
                     huella1.SetActive(false);
+                    borrarCilindros();
                     huella2.SetActive(true);
+                    borrarCubo();
+                    crearHuellaCubo();
                     huella3.SetActive(false);
+                    borrarPiramides();
                     break;
             }
         }
@@ -90,13 +113,21 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
             {
                 case 1:
                     huella1.SetActive(false);
+                    borrarCilindros();
                     huella2.SetActive(false);
+                    borrarCubo();
                     huella3.SetActive(true);
+                    borrarPiramides();
+                    crearHuellaPiramides();
                     break;
                 case 2:
                     huella1.SetActive(true);
+                    borrarCilindros();
+                    crearHuellaCilindro();
                     huella2.SetActive(false);
+                    borrarCubo();
                     huella3.SetActive(false);
+                    borrarPiramides();
                     break;
             }
         }
@@ -119,6 +150,8 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
                         {
                             Invoke("ultimo", 0.2f);
                         }
+                        btnSi.interactable = false;
+                        btnNo.interactable = false;
                     }
                     else
                     {
@@ -150,6 +183,8 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
                         {
                             Invoke("ultimo", 0.2f);
                         }
+                        btnSi.interactable = false;
+                        btnNo.interactable = false;
                     }
                     else
                     {
@@ -181,6 +216,8 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
                         {
                             Invoke("ultimo", 0.2f);
                         }
+                        btnSi.interactable = false;
+                        btnNo.interactable = false;
                     }
                     else
                     {
@@ -224,6 +261,8 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
                         {
                             Invoke("ultimo", 0.2f);
                         }
+                        btnSi.interactable = false;
+                        btnNo.interactable = false;
                     }
                     else
                     {
@@ -256,6 +295,8 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
                         {
                             Invoke("ultimo", 0.2f);
                         }
+                        btnSi.interactable = false;
+                        btnNo.interactable = false;
                     }
                     else
                     {
@@ -288,6 +329,8 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
                         {
                             Invoke("ultimo", 0.2f);
                         }
+                        btnSi.interactable = false;
+                        btnNo.interactable = false;
                     }
                     else
                     {
@@ -315,4 +358,90 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
         ultimoObjeto = true;
     }
     
+
+    //CILINDROS
+    public void crearHuellaCilindro()
+    {
+        j = 0;
+        InvokeRepeating("instanceCilindro", 0.2f, 0.2f);
+        
+    } 
+
+    void instanceCilindro()
+    {
+        objCilindros[j].SetActive(true);
+        j++;
+        if (j == 8)
+        {
+            btnSi.interactable = true;
+            btnNo.interactable = true;
+            CancelInvoke();
+        }
+    }
+
+    public void borrarCilindros()
+    {
+        for(int i=0; i < objCilindros.Length; i++)
+        {
+            objCilindros[i].SetActive(false);
+        }
+    }
+
+
+    //CUBOS
+
+    public void crearHuellaCubo()
+    {
+        j = 0;
+        InvokeRepeating("instanceCubo", 0.2f, 0.2f);
+
+    }
+
+    void instanceCubo()
+    {
+        objCubos[j].SetActive(true);
+        j++;
+        if (j ==10)
+        {
+            btnSi.interactable = true;
+            btnNo.interactable = true;
+            CancelInvoke();
+        }
+    }
+
+    public void borrarCubo()
+    {
+        for (int i = 0; i < objCubos.Length; i++)
+        {
+            objCubos[i].SetActive(false);
+        }
+    }
+
+    //PIRAMIDES
+    public void crearHuellaPiramides()
+    {
+        j = 0;
+        InvokeRepeating("instancePiramides", 0.2f, 0.2f);
+
+    }
+
+    void instancePiramides()
+    {
+        objPiramide[j].SetActive(true);
+        j++;
+        if (j == 10)
+        {
+            btnSi.interactable = true;
+            btnNo.interactable = true;
+            CancelInvoke();
+        }
+    }
+
+    public void borrarPiramides()
+    {
+        for (int i = 0; i < objPiramide.Length; i++)
+        {
+            objPiramide[i].SetActive(false);
+        }
+    }
 }
