@@ -9,10 +9,12 @@ public class ControllerCartaEjer35 : MonoBehaviour {
     cartaEjer35 primeraCarta;
     cartaEjer35 segundaCarta;
     popUpScript popUp;
+    
     int count;
 
     // Use this for initialization
     void Start () {
+       
         count = 0;
         buscarCartas();
         popUp = FindObjectOfType<popUpScript>();
@@ -44,7 +46,7 @@ public class ControllerCartaEjer35 : MonoBehaviour {
         if (esperandoSegunda)
         {
             segundaCarta = carta;
-            //desabilitarBanderas();
+            desabilitarBanderas();
             if (primeraCarta.id == carta.id)
             {
                 buscarCartas();
@@ -55,11 +57,13 @@ public class ControllerCartaEjer35 : MonoBehaviour {
                 else
                 {
                     popUp.cartelAcierto();
+                    Invoke("habilitarBanderas", 0.4f);
                     count++;
                 }
             }
             else {
                 Invoke("darVueltas", 1.0f);
+                Invoke("habilitarBanderas", 1.4f);
                 popUp.cartelError();
 
             }
@@ -68,6 +72,7 @@ public class ControllerCartaEjer35 : MonoBehaviour {
         }
         else {
             primeraCarta = carta;
+            Invoke("habilitarBanderas", 0.4f);
             //primeraCarta.bandera = false;
             esperandoSegunda = true;
         }

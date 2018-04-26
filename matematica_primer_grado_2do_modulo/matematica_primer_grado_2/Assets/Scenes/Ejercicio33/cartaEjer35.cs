@@ -12,9 +12,11 @@ public class cartaEjer35 : MonoBehaviour {
     [HideInInspector] public bool volteable;
     Transform miTransform;
     ControllerCartaEjer35 controller;
-	// Use this for initialization
-	void Start () {
+    InteractuableScale CrecimientoConMause;
+    // Use this for initialization
+    void Start () {
         bandera = true;
+        CrecimientoConMause = gameObject.GetComponent<InteractuableScale>();
         miTransform = gameObject.GetComponent<Transform>();
         controller = FindObjectOfType<ControllerCartaEjer35>();
         
@@ -37,6 +39,7 @@ public class cartaEjer35 : MonoBehaviour {
     }
     IEnumerator Voltear()
     {
+        CrecimientoConMause.enabled = false;
         controller.desabilitarBanderas();
         
         while(miTransform.localScale.x > 0)
@@ -51,7 +54,7 @@ public class cartaEjer35 : MonoBehaviour {
             miTransform.localScale += new Vector3(0.1f, 0, 0);
             yield return new WaitForSeconds(.01f);
         }
-        controller.habilitarBanderas();
+        CrecimientoConMause.enabled = true;
 
     }
 }
