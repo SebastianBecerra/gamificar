@@ -8,7 +8,7 @@ public class ej31mod2controller : MonoBehaviour {
     public GameObject pos1, pos2, pos3, fig1, fig2, fig3, drop1, drop2, drop3;
     private int randomSelect;
     popUpScript popUp;
-    public string escenaSiguiente;
+    //public string escenaSiguiente;
 
 
 	// Use this for initialization
@@ -57,8 +57,7 @@ public class ej31mod2controller : MonoBehaviour {
             {
                 if (drop3.GetComponent<DropZone>().idDropZone == drop3.GetComponentInChildren<Dragable>().idDropZone1)
                 {
-                    popUp.cartelAcierto();//muestra el cartel de acierto
-                    Invoke("siguienteEscena", 0.5f);//y carga la siguiente escena
+                    popUp.Bien();
                 }
                 else
                 {
@@ -76,8 +75,8 @@ public class ej31mod2controller : MonoBehaviour {
         }
     }
 
-    void siguienteEscena()
-    {
-        SceneManager.LoadScene(escenaSiguiente);
-    }
+    //void siguienteEscena()
+    //{
+    //    SceneManager.LoadScene(escenaSiguiente);
+    //}
 }

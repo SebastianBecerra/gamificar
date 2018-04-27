@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ej31mod2_2 : MonoBehaviour, IDropHandler {
 
@@ -14,6 +15,9 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
     public GameObject[] objCilindros, objCubos, objPiramide;
     public int j = 0;
     public Button btnSi, btnNo;
+    public string escenaSiguiente;
+    public bool continua;
+    private GameObject sonidoHuella;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +28,7 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
         estado = 0;//seteo el estado 0 al comienzod el ejercicio
         btnNo.interactable = false;
         btnSi.interactable = false;
+        sonidoHuella = GameObject.Find("a_btn_normal");
 	}
 	
 	// Update is called once per frame
@@ -44,12 +49,15 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
         {
             case 1:
                 Debug.Log("cilindro");
+                lugarDrop.transform.GetChild(0).GetComponent<Dragable>().enabled = false;
                 break;
             case 2:
                 Debug.Log("cubo");
+                lugarDrop.transform.GetChild(0).GetComponent<Dragable>().enabled = false;
                 break;
             case 3:
                 Debug.Log("piramide");
+                lugarDrop.transform.GetChild(0).GetComponent<Dragable>().enabled = false;
                 break;
         }
     }
@@ -162,7 +170,15 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
                 {
                     if (huella1.activeInHierarchy)
                     {
-                        popUp.Bien();
+                        if (continua)
+                        {
+                            popUp.cartelAcierto();
+                            Invoke("escenSigue", 0.5f);
+                        }
+                        else
+                        {
+                            popUp.Bien();
+                        }
                     }
                     else
                     {
@@ -195,7 +211,15 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
                 {
                     if (huella2.activeInHierarchy)
                     {
-                        popUp.Bien();
+                        if (continua)
+                        {
+                            popUp.cartelAcierto();
+                            Invoke("escenSigue", 0.5f);
+                        }
+                        else
+                        {
+                            popUp.Bien();
+                        }
                     }
                     else
                     {
@@ -230,7 +254,15 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
 
                     if (huella3.activeInHierarchy)
                     {
-                        popUp.Bien();
+                        if (continua)
+                        {
+                            popUp.cartelAcierto();
+                            Invoke("escenSigue", 0.5f);
+                        }
+                        else
+                        {
+                            popUp.Bien();
+                        }
                     }
                     else
                     {
@@ -273,7 +305,15 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
                 {
                     if (!huella1.activeInHierarchy)
                     {
-                        popUp.Bien();
+                        if (continua)
+                        {
+                            popUp.cartelAcierto();
+                            Invoke("escenSigue", 0.5f);
+                        }
+                        else
+                        {
+                            popUp.Bien();
+                        }
                     }
                     else
                     {
@@ -307,7 +347,15 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
                 {
                     if (!huella2.activeInHierarchy)
                     {
-                        popUp.Bien();
+                        if (continua)
+                        {
+                            popUp.cartelAcierto();
+                            Invoke("escenSigue", 0.5f);
+                        }
+                        else
+                        {
+                            popUp.Bien();
+                        }
                     }
                     else
                     {
@@ -341,7 +389,15 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
                 {
                     if (!huella3.activeInHierarchy)
                     {
-                        popUp.Bien();
+                        if (continua)
+                        {
+                            popUp.cartelAcierto();
+                            Invoke("escenSigue", 0.5f);
+                        }
+                        else
+                        {
+                            popUp.Bien();
+                        }
                     }
                     else
                     {
@@ -358,6 +414,10 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
         ultimoObjeto = true;
     }
     
+    void escenSigue()
+    {
+        SceneManager.LoadScene(escenaSiguiente);
+    }
 
     //CILINDROS
     public void crearHuellaCilindro()
@@ -370,6 +430,7 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
     void instanceCilindro()
     {
         objCilindros[j].SetActive(true);
+        sonidoHuella.GetComponent<AudioSource>().Play();
         j++;
         if (j == 8)
         {
@@ -400,6 +461,7 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
     void instanceCubo()
     {
         objCubos[j].SetActive(true);
+        sonidoHuella.GetComponent<AudioSource>().Play();
         j++;
         if (j ==10)
         {
@@ -428,6 +490,7 @@ public class ej31mod2_2 : MonoBehaviour, IDropHandler {
     void instancePiramides()
     {
         objPiramide[j].SetActive(true);
+        sonidoHuella.GetComponent<AudioSource>().Play();
         j++;
         if (j == 10)
         {

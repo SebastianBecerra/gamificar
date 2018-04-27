@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Ejercicio30scripgm : MonoBehaviour {
     private bool pista1 = true;
-    public string respuestaCorrecta, respuestaCorrecta2;
+    public string respuestaCorrecta, respuestaCorrecta2, respuestaCorrecta3;
     public GameObject pista;
     public GameObject iT;
     private popUpScript popUp;
+    public string escenaSiguiente;
+    public bool continua;
 	// Use this for initialization
 	void Start () {
 		
@@ -44,9 +47,17 @@ public class Ejercicio30scripgm : MonoBehaviour {
     public void Checkeo()
     {
 
-        if (iT.transform.GetChild(2).GetComponent<Text>().text == respuestaCorrecta || iT.transform.GetChild(2).GetComponent<Text>().text == respuestaCorrecta2)
+        if (iT.transform.GetChild(2).GetComponent<Text>().text == respuestaCorrecta || iT.transform.GetChild(2).GetComponent<Text>().text == respuestaCorrecta2 || iT.transform.GetChild(2).GetComponent<Text>().text == respuestaCorrecta3)
         {
-            popUp.Bien();
+            if (continua)
+            {
+                popUp.cartelAcierto();
+                Invoke("sigueEscena", 0.5f);
+            }
+            else
+            {
+                popUp.Bien();
+            }
      
         }
         else
@@ -55,5 +66,10 @@ public class Ejercicio30scripgm : MonoBehaviour {
 
         }
 
+    }
+
+    void sigueEscena()
+    {
+        SceneManager.LoadScene(escenaSiguiente);
     }
 }
