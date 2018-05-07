@@ -41,19 +41,27 @@ public class cartaEjer35 : MonoBehaviour {
     {
         CrecimientoConMause.enabled = false;
         controller.desabilitarBanderas();
-        
+        for (int i = 0; i < 10; i++)
+        {
+            miTransform.localScale -= new Vector3(0.1f, 0, 0);
+            yield return new WaitForSeconds(.01f);
+        }/*
         while(miTransform.localScale.x > 0)
         {
             miTransform.localScale -= new Vector3(0.1f, 0, 0);
             yield return new WaitForSeconds(.01f);
-        }
+        }*/
         dorso.enabled = !dorso.enabled;
-       // bocaArriba = !dorso.enabled;
+        for (int i = 0; i < 10; i++)
+        {
+            miTransform.localScale += new Vector3(0.1f, 0, 0);
+            yield return new WaitForSeconds(.01f);
+        }/*
         while (miTransform.localScale.x < 1)
         {
             miTransform.localScale += new Vector3(0.1f, 0, 0);
             yield return new WaitForSeconds(.01f);
-        }
+        }*/
         CrecimientoConMause.enabled = true;
 
     }

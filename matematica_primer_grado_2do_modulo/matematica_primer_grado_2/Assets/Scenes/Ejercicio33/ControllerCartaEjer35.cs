@@ -62,9 +62,11 @@ public class ControllerCartaEjer35 : MonoBehaviour {
                 }
             }
             else {
-                Invoke("darVueltas", 1.0f);
-                Invoke("habilitarBanderas", 1.4f);
                 popUp.cartelError();
+                Invoke("habilitarBanderas", 2.4f);
+                Invoke("darVueltas", 1.0f);
+                
+                
 
             }
             //habilitarBanderas();
