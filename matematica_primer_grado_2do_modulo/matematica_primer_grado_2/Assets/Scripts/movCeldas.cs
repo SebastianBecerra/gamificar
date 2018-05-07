@@ -58,7 +58,7 @@ public class movCeldas : MonoBehaviour {
     }
       public void Moverderecha()
     {
-        if (usarBotones)
+        if (usarBotones && detDer.hayParedDer == false)
         {
             pos += Vector3.right * distancia;
             transform.position = Vector3.MoveTowards(transform.position, pos, velocidad);
@@ -66,7 +66,7 @@ public class movCeldas : MonoBehaviour {
     }
     public void Moverizq()
     {
-        if (usarBotones)
+        if (usarBotones && detIzq.hayParedIzq == false)
         {
             pos += Vector3.left * distancia;
             transform.position = Vector3.MoveTowards(transform.position, pos, velocidad);
@@ -74,7 +74,7 @@ public class movCeldas : MonoBehaviour {
     }
     public void Moverarriba()
     {
-        if (usarBotones)
+        if (usarBotones && detArriba.hayParedArriba == false)
         {
             pos += Vector3.up * distancia;
             transform.position = Vector3.MoveTowards(transform.position, pos, velocidad);
@@ -82,7 +82,7 @@ public class movCeldas : MonoBehaviour {
     }
     public void Moverabajo()
     {
-        if (usarBotones)
+        if (usarBotones && detAbajo.hayParedAbajo == false)
         {
             pos += Vector3.down * distancia;
             transform.position = Vector3.MoveTowards(transform.position, pos, velocidad);
